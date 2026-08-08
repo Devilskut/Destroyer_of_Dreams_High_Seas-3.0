@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<signs version="2">
+  <sign guid="8452e8f3-b09a-42e8-96ef-f7b57eae2d2a" name="docks_03_01" modified="2026-04-08 17:39:26Z" next_poly_id="1" next_text_id="2" next_noise_id="3" next_group_id="11">
+    <layer name="Group 10" type="GroupSignLayer" pos="0.1483326, -0.08078695" rot="0.4" scale="1, 1" color="#FFFFFFFF" mode="ColorOnly">
+      <layer name="Noise 00" type="NoiseSignLayer" pos="0.1483326, 0.02984438" rot="5" scale="0.1706402, 0.2572129" color="#532E0BFF" mode="PunchOut" seed="0" detail="6" softness="0" dilate="-0.2238806" fade="0">
+        <warp type="BulgeWarp" offset="-1.970149, -0.4477612" amount="0.6343284" />
+      </layer>
+      <layer name="Poly 00" type="PolygonSignLayer" pos="-0.1483326, 0.08078695" rot="0" scale="0.17064, 0.17064" color="#110B05FF" mode="ColorOnly" sides="4" smoothness="0.1492537" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal">
+        <warp type="StretchWarp" offset="0, 0" rotation="90.0433" distance="4.738806" width="0" exponent="1" />
+      </layer>
+      <layer name="Noise 00" type="NoiseSignLayer" pos="0.1483326, 0.02984438" rot="5" scale="0.1706402, 0.2572129" color="#532E0BFF" mode="PunchOut" seed="0" detail="6" softness="0" dilate="-0.1937314" fade="0">
+        <warp type="BulgeWarp" offset="-1.970149, -0.4477612" amount="0.6343284" />
+      </layer>
+      <layer name="Poly 00" type="PolygonSignLayer" pos="-0.1483326, 0.08078695" rot="0" scale="0.17064, 0.17064" color="#421A1AFF" mode="ColorAndMask" sides="4" smoothness="0.1492537" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal">
+        <warp type="StretchWarp" offset="0, 0" rotation="90.0433" distance="4.738806" width="0" exponent="1" />
+      </layer>
+      <layer name="Noise 00" type="NoiseSignLayer" pos="0.1483326, 0.02984438" rot="5" scale="0.1706402, 0.2572129" color="#946E2DFF" mode="ColorOnly" seed="0" detail="6" softness="0.1791045" dilate="-0.2388059" fade="0">
+        <warp type="BulgeWarp" offset="-1.970149, -0.4029851" amount="0.6343284" />
+      </layer>
+      <layer name="Noise 01" type="NoiseSignLayer" pos="-0.1483326, 0.08078695" rot="0" scale="0.3, 0.3" color="#63431AFF" mode="ColorOnly" seed="0" detail="4" softness="0.238806" dilate="-0.01492536" fade="0.7761194" />
+      <layer name="Poly 00" type="PolygonSignLayer" pos="-0.1483326, 0.08078695" rot="0" scale="0.17064, 0.17064" color="#603939FF" mode="ColorOnly" sides="4" smoothness="0.1492537" starify="0" softness="0" dilate="0.02" frequency="5" shapeMode="Line">
+        <warp type="StretchWarp" offset="0, 0" rotation="90.0433" distance="4.738806" width="0" exponent="1" />
+      </layer>
+      <layer name="Noise 00" type="NoiseSignLayer" pos="-0.1483326, 0.08078695" rot="0" scale="0.1540026, 0.1540026" color="#FFFFFFFF" mode="PunchOut" seed="0" detail="5" softness="0" dilate="-0.2537314" fade="0" />
+      <layer name="Group 07" type="GroupSignLayer" pos="-0.1326012, 0.09002064" rot="0" scale="1, 1" color="#FFFFFFFF" mode="ColorOnly">
+        <layer name="Text 00" type="TextSignLayer" pos="0.005243819, 0.00174231" rot="0" scale="0.2095012, 0.27075" color="#CD932FFF" mode="ColorOnly" font="Stardos Stencil" text="Haulwell Freight co." direction="0" spacing="1" softness="0.977612" dilate="-0.2238806" />
+        <layer name="Group 04" type="GroupSignLayer" pos="-0.005243818, -0.00174231" rot="0" scale="1, 1" color="#FFFFFFFF" mode="ColorAndMask">
+          <layer name="Text 00" type="TextSignLayer" pos="0.01048764, 0.00749138" rot="0" scale="0.2095012, 0.27075" color="#B6B6A1FF" mode="ColorAndMask" font="Stardos Stencil" text="Haulwell Freight co." direction="0" spacing="1" softness="0" dilate="0.1343284" />
+          <layer name="Noise 00" type="NoiseSignLayer" pos="-0.01048764, -0.00749138" rot="0" scale="0.1540026, 0.1540026" color="#BC783EFF" mode="ColorOnly" seed="0" detail="5" softness="0.12" dilate="-0.2737314" fade="0" />
+        </layer>
+      </layer>
+      <layer name="Noise 02" type="NoiseSignLayer" pos="-0.1483326, 0.08078695" rot="0" scale="0.3, 0.3" color="#643515C7" mode="ColorOnly" seed="0" detail="3" softness="0" dilate="-0.01492536" fade="0.9029851" />
+      <layer name="Noise 00" type="NoiseSignLayer" pos="0.1483326, 0.02984438" rot="5" scale="0.1706402, 0.2572129" color="#532E0BFF" mode="PunchOut" seed="0" detail="6" softness="0" dilate="-0.1937314" fade="0">
+        <warp type="BulgeWarp" offset="-1.970149, -0.4477612" amount="0.6343284" />
+      </layer>
+      <layer name="Group 09" type="GroupSignLayer" pos="-0.10638, -0.09002063" rot="0" scale="1, 1" color="#FFFFFFFF" mode="ColorOnly">
+        <layer name="Poly 00" type="PolygonSignLayer" pos="-0.04195264, 0.1708076" rot="0" scale="0.17064, 0.17064" color="#110B05FF" mode="MaskOnly" sides="4" smoothness="0.1492537" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal">
+          <warp type="StretchWarp" offset="0, 0" rotation="90.0433" distance="4.738806" width="0" exponent="1" />
+        </layer>
+        <layer name="Poly 01" type="PolygonSignLayer" pos="0.04195264, -0.1708076" rot="5" scale="2.866047, 1.081513" color="#FFFFFFFF" mode="PunchOut" sides="4" smoothness="0.9179105" starify="0" softness="1" dilate="-0.7910448" frequency="5" shapeMode="Normal" />
+        <layer name="Noise 03" type="NoiseSignLayer" pos="-0.04195264, 0.1708076" rot="0" scale="0.01125723, 0.880899" color="#B98A3BFF" mode="ColorOnly" seed="0" detail="4" softness="0" dilate="0" fade="0" />
+      </layer>
+    </layer>
+  </sign>
+  <sign guid="e4ff87e8-709c-4f16-a2a7-ae5b1d6a67f5" name="docks_03_01 (1)" modified="2026-04-08 17:40:51Z" next_poly_id="2" next_text_id="2" next_noise_id="4" next_group_id="10">
+    <layer name="Group 09" type="GroupSignLayer" pos="0.8360557, -0.3521027" rot="0" scale="0.95, 0.95" color="#FFFFFFFF" mode="ColorOnly">
+      <layer name="Noise 00" type="NoiseSignLayer" pos="0.9679063, 0.4270188" rot="10" scale="0.1706402, 0.2572129" color="#532E0BFF" mode="PunchOut" seed="0" detail="6" softness="0" dilate="-0.2238806" fade="0">
+        <warp type="BulgeWarp" offset="-1.970149, -0.4477612" amount="0.6343284" />
+      </layer>
+      <layer name="Poly 00" type="PolygonSignLayer" pos="-0.8780077, 0.3640894" rot="0" scale="0.17064, 0.17064" color="#110B05FF" mode="ColorOnly" sides="4" smoothness="0.1492537" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal">
+        <warp type="StretchWarp" offset="0, 0" rotation="90.0433" distance="4.738806" width="0" exponent="1" />
+      </layer>
+      <layer name="Noise 00" type="NoiseSignLayer" pos="0.9679063, 0.4270188" rot="10" scale="0.1706402, 0.2572129" color="#532E0BFF" mode="PunchOut" seed="0" detail="6" softness="0" dilate="-0.1937314" fade="0">
+        <warp type="BulgeWarp" offset="-1.970149, -0.4477612" amount="0.6343284" />
+      </layer>
+      <layer name="Poly 00" type="PolygonSignLayer" pos="-0.8780077, 0.3640894" rot="0" scale="0.17064, 0.17064" color="#421A1AFF" mode="ColorAndMask" sides="4" smoothness="0.1492537" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal">
+        <warp type="StretchWarp" offset="0, 0" rotation="90.0433" distance="4.738806" width="0" exponent="1" />
+      </layer>
+      <layer name="Noise 00" type="NoiseSignLayer" pos="0.9679063, 0.4270188" rot="10" scale="0.1706402, 0.2572129" color="#946E2DFF" mode="ColorOnly" seed="0" detail="6" softness="0.1791045" dilate="-0.2388059" fade="0">
+        <warp type="BulgeWarp" offset="-1.970149, -0.4029851" amount="0.6343284" />
+      </layer>
+      <layer name="Noise 01" type="NoiseSignLayer" pos="-0.8780077, 0.3640894" rot="0" scale="0.3, 0.3" color="#63431AFF" mode="ColorOnly" seed="0" detail="4" softness="0.238806" dilate="-0.01492536" fade="0.7761194" />
+      <layer name="Poly 00" type="PolygonSignLayer" pos="-0.8780077, 0.3640894" rot="0" scale="0.17064, 0.17064" color="#603939FF" mode="ColorOnly" sides="4" smoothness="0.1492537" starify="0" softness="0" dilate="0.02" frequency="5" shapeMode="Line">
+        <warp type="StretchWarp" offset="0, 0" rotation="90.0433" distance="4.738806" width="0" exponent="1" />
+      </layer>
+      <layer name="Noise 00" type="NoiseSignLayer" pos="-0.8780077, 0.3640894" rot="0" scale="0.1540026, 0.1540026" color="#FFFFFFFF" mode="PunchOut" seed="0" detail="5" softness="0" dilate="-0.2537314" fade="0" />
+      <layer name="Group 07" type="GroupSignLayer" pos="-0.8622763, 0.3733231" rot="0" scale="1, 1" color="#FFFFFFFF" mode="ColorOnly">
+        <layer name="Text 00" type="TextSignLayer" pos="0.005243819, 0.00174231" rot="0" scale="0.2095012, 0.27075" color="#CD932FFF" mode="ColorOnly" font="Stardos Stencil" text="Haulwell Freight co." direction="0" spacing="1" softness="0.977612" dilate="-0.2238806" />
+        <layer name="Group 04" type="GroupSignLayer" pos="-0.005243818, -0.00174231" rot="0" scale="1, 1" color="#FFFFFFFF" mode="ColorAndMask">
+          <layer name="Text 00" type="TextSignLayer" pos="0.01048764, 0.00749138" rot="0" scale="0.2095012, 0.27075" color="#B6B6A1FF" mode="ColorAndMask" font="Stardos Stencil" text="Haulwell Freight co." direction="0" spacing="1" softness="0" dilate="0.1343284" />
+          <layer name="Noise 00" type="NoiseSignLayer" pos="-0.01048764, -0.00749138" rot="0" scale="0.1540026, 0.1540026" color="#BC783EFF" mode="ColorOnly" seed="0" detail="5" softness="0.12" dilate="-0.2737314" fade="0" />
+        </layer>
+      </layer>
+      <layer name="Noise 02" type="NoiseSignLayer" pos="-0.8780077, 0.3640894" rot="0" scale="0.3, 0.3" color="#643515C7" mode="ColorOnly" seed="0" detail="3" softness="0" dilate="-0.01492536" fade="0.9029851" />
+      <layer name="Noise 00" type="NoiseSignLayer" pos="0.9679063, 0.4270188" rot="10" scale="0.1706402, 0.2572129" color="#532E0BFF" mode="PunchOut" seed="0" detail="6" softness="0" dilate="-0.1937314" fade="0">
+        <warp type="BulgeWarp" offset="-1.970149, -0.4477612" amount="0.6343284" />
+      </layer>
+      <layer name="Poly 00" type="PolygonSignLayer" pos="-0.8780077, 0.3640894" rot="0" scale="0.17064, 0.17064" color="#110B05FF" mode="MaskOnly" sides="4" smoothness="0.1492537" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal">
+        <warp type="StretchWarp" offset="0, 0" rotation="90.0433" distance="4.738806" width="0" exponent="1" />
+      </layer>
+      <layer name="Poly 01" type="PolygonSignLayer" pos="-0.9679063, -0.4270188" rot="7.450581E-08" scale="0.7552603, 0.7552603" color="#FFFFFFFF" mode="PunchOut" sides="4" smoothness="0" starify="0" softness="1" dilate="0" frequency="5" shapeMode="Normal" />
+      <layer name="Noise 03" type="NoiseSignLayer" pos="-0.8780077, 0.3640894" rot="0" scale="0.01125723, 0.880899" color="#B98A3BFF" mode="ColorOnly" seed="0" detail="4" softness="0" dilate="0" fade="0" />
+    </layer>
+  </sign>
+  <sign guid="839e37c7-6a92-4cf4-9b87-30245d91d91e" name="docks_03_01 (3)" modified="2026-04-08 18:17:29Z" next_poly_id="2" next_text_id="2" next_noise_id="3" next_group_id="21">
+    <layer name="Noise 00" type="NoiseSignLayer" pos="0.09230964, -0.6056669" rot="65.9" scale="0.06439171, 0.09706034" color="#532E0BFF" mode="PunchOut" seed="0" detail="6" softness="0" dilate="-0.2238806" fade="0">
+      <warp type="BulgeWarp" offset="-1.970149, -0.4477612" amount="0.6343284" />
+    </layer>
+    <layer name="Poly 00" type="PolygonSignLayer" pos="0.01451361, 0.00669897" rot="0.9" scale="0.162108, 0.162108" color="#0A3D54FF" mode="ColorOnly" sides="4" smoothness="0.1492537" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal">
+      <warp type="StretchWarp" offset="0, 0" rotation="90.0433" distance="4.738806" width="0" exponent="1" />
+    </layer>
+    <layer name="Noise 00" type="NoiseSignLayer" pos="0.09230964, -0.6056669" rot="65.9" scale="0.06439171, 0.09706034" color="#532E0BFF" mode="PunchOut" seed="0" detail="6" softness="0" dilate="-0.1937314" fade="0">
+      <warp type="BulgeWarp" offset="-1.970149, -0.4477612" amount="0.6343284" />
+    </layer>
+    <layer name="Poly 00" type="PolygonSignLayer" pos="0.01451361, 0.00669897" rot="0.9" scale="0.162108, 0.162108" color="#1F4B5AFF" mode="ColorAndMask" sides="4" smoothness="0.1492537" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal">
+      <warp type="StretchWarp" offset="0, 0" rotation="90.0433" distance="4.738806" width="0" exponent="1" />
+    </layer>
+    <layer name="Noise 00" type="NoiseSignLayer" pos="0.09230964, -0.6056669" rot="65.9" scale="0.06439171, 0.09706034" color="#4B5E30FF" mode="ColorOnly" seed="0" detail="6" softness="0.1791045" dilate="-0.2388059" fade="0">
+      <warp type="BulgeWarp" offset="-1.970149, -0.4029851" amount="0.6343284" />
+    </layer>
+    <layer name="Noise 01" type="NoiseSignLayer" pos="0.01451361, 0.00669897" rot="0.9" scale="0.2205276, 0.2205276" color="#63431AFF" mode="ColorOnly" seed="0" detail="4" softness="0.238806" dilate="-0.01492536" fade="0.7761194" />
+    <layer name="Poly 00" type="PolygonSignLayer" pos="0.01451361, 0.00669897" rot="0.9" scale="0.162108, 0.162108" color="#603939FF" mode="ColorOnly" sides="4" smoothness="0.1492537" starify="0" softness="0" dilate="0.02" frequency="5" shapeMode="Line">
+      <warp type="StretchWarp" offset="0, 0" rotation="90.0433" distance="4.738806" width="0" exponent="1" />
+    </layer>
+    <layer name="Noise 00" type="NoiseSignLayer" pos="0.01451361, 0.00669897" rot="0.9" scale="0.1132061, 0.1132061" color="#FFFFFFFF" mode="PunchOut" seed="0" detail="5" softness="0" dilate="-0.2537314" fade="0" />
+    <layer name="Group 18" type="GroupSignLayer" pos="0.02229045, 0.03496767" rot="0.9" scale="1, 1" color="#FFFFFFFF" mode="ColorAndMask">
+      <layer name="Group 16" type="GroupSignLayer" pos="-0.002642788, 0.004062008" rot="0" scale="1, 1" color="#CD932FFF" mode="ColorOnly" softnessOffset="0.8955224" dilateOffset="0.238806">
+        <layer name="Text 00" type="TextSignLayer" pos="0.01057116, -0.07394114" rot="0.5" scale="0.2572125, 0.2205277" color="#B6B6A1FF" mode="ColorOnly" font="LiberationSans" text="FISHERY" direction="0" spacing="1.104478" softness="0" dilate="-0.02985072" />
+        <layer name="Text 00" type="TextSignLayer" pos="-0.001533965, 0.06019602" rot="0.5" scale="0.09706006, 0.08321691" color="#B6B6A1FF" mode="ColorOnly" font="LiberationSans" text="NAVEZGANE" direction="0" spacing="1.313433" softness="0" dilate="0.1791044" />
+        <layer name="Poly 01" type="PolygonSignLayer" pos="0.542922, 0.07394114" rot="0.5" scale="0.02308348, 0.002677272" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+        <layer name="Poly 01" type="PolygonSignLayer" pos="-0.5431228, 0.06446336" rot="0.5" scale="0.02308348, 0.002677272" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+        <layer name="Poly 01" type="PolygonSignLayer" pos="-0.542922, 0.04144509" rot="0.5" scale="0.02308348, 0.002677272" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+        <layer name="Poly 01" type="PolygonSignLayer" pos="0.5431228, 0.05092286" rot="0.5" scale="0.02308348, 0.002677272" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+      </layer>
+      <layer name="Group 12" type="GroupSignLayer" pos="0.002642788, -0.004062004" rot="0.5" scale="0.7350919, 0.7350919" color="#FFFFFFFF" mode="ColorOnly">
+        <layer name="Text 00" type="TextSignLayer" pos="0.006408753, -0.08959525" rot="0" scale="0.3499053, 0.3000002" color="#B6B6A1FF" mode="ColorOnly" font="LiberationSans" text="FISHERY" direction="0" spacing="1.104478" softness="0" dilate="-0.02985072" />
+        <layer name="Group 11" type="GroupSignLayer" pos="-0.006408753, 0.08959525" rot="0" scale="0.95, 0.95" color="#B6B6A1FF" mode="ColorOnly" colorMode="Override">
+          <layer name="Text 00" type="TextSignLayer" pos="-0.00216523, 0.003603131" rot="0" scale="0.1389874, 0.1191644" color="#B6B6A1FF" mode="ColorOnly" font="LiberationSans" text="NAVEZGANE" direction="0" spacing="1.313433" softness="0" dilate="0.1791044" />
+          <layer name="Poly 01" type="PolygonSignLayer" pos="0.7776229, 0.0164814" rot="0" scale="0.132038, 0.003833781" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+          <layer name="Poly 01" type="PolygonSignLayer" pos="-0.7776229, 0.0164814" rot="0" scale="0.132038, 0.003833781" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+          <layer name="Poly 01" type="PolygonSignLayer" pos="-0.7776229, -0.0164814" rot="0" scale="0.132038, 0.003833781" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+          <layer name="Poly 01" type="PolygonSignLayer" pos="0.7776229, -0.0164814" rot="0" scale="0.132038, 0.003833781" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+        </layer>
+      </layer>
+    </layer>
+    <layer name="Noise 00" type="NoiseSignLayer" pos="0.0145136, 0.00669897" rot="0.9" scale="0.1132061, 0.1132061" color="#BC783EFF" mode="ColorOnly" seed="0" detail="5" softness="0.12" dilate="-0.2737314" fade="0" />
+    <layer name="Noise 02" type="NoiseSignLayer" pos="0.01451361, 0.00669897" rot="0.9" scale="0.2205276, 0.2205276" color="#643515C7" mode="ColorOnly" seed="0" detail="3" softness="0" dilate="-0.01492536" fade="0.9029851" />
+    <layer name="Noise 00" type="NoiseSignLayer" pos="0.09230964, -0.6056669" rot="65.9" scale="0.06439171, 0.09706034" color="#532E0BFF" mode="PunchOut" seed="0" detail="6" softness="0" dilate="-0.1937314" fade="0">
+      <warp type="BulgeWarp" offset="-1.970149, -0.4477612" amount="0.6343284" />
+    </layer>
+    <layer name="Group 20" type="GroupSignLayer" pos="0.06669104, -0.07940342" rot="0" scale="1, 1" color="#FFFFFFFF" mode="ColorOnly">
+      <layer name="Poly 00" type="PolygonSignLayer" pos="-0.04631704, 0.09195495" rot="0.9" scale="0.162108, 0.1540026" color="#110B05FF" mode="MaskOnly" sides="4" smoothness="0.1492537" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal">
+        <warp type="StretchWarp" offset="0, 0" rotation="90.0433" distance="4.738806" width="0" exponent="1" />
+      </layer>
+      <layer name="Poly 01" type="PolygonSignLayer" pos="0.04631704, -0.1249178" rot="5.9" scale="2.722745, 0.7950115" color="#FFFFFFFF" mode="PunchOut" sides="4" smoothness="0.9179105" starify="0" softness="1" dilate="-0.7910448" frequency="5" shapeMode="Normal" />
+      <layer name="Noise 03" type="NoiseSignLayer" pos="-0.03732755, 0.1249178" rot="0.9" scale="0.01069437, 0.6475416" color="#B98A3BFF" mode="ColorOnly" seed="0" detail="4" softness="0" dilate="0" fade="0" />
+    </layer>
+  </sign>
+</signs>

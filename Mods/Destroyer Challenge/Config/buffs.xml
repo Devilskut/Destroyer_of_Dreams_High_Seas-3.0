@@ -1,0 +1,39 @@
+<config>
+	<insertafter xpath="//buff[@name='buffInternalBleeding']">
+	<buff name="buffInternalBleedingAC" name_key="buffInternalBleedingName" description_key="buffInternalBleedingDesc" tooltip_key="buffInternalBleedingTooltip" icon="ui_game_symbol_critical" icon_color="255,0,0" icon_blink="true">
+		<damage_type value="bloodloss"/>		
+		<stack_type value="ignore"/>
+		<duration value="60"/>
+
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" value="1,5,200" duration="0,3,60"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffInternalBleeding"/>
+			<requirement name="EntityTagCompare" tags="player"/>
+		</effect_group>
+	</buff>
+
+	<buff name="DK_BOMB" hidden="true">
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Ranged/TimedCharge/timedChargePrefab.prefab" local_offset="-.06,.2,0.1" local_rotation="-80,180,0" local_scale="1,1,1" parent_transform="Spine1">
+					<requirement name="!HasAttachedPrefab" prefab="@:Other/Items/Weapons/Ranged/TimedCharge/timedChargePrefab.prefab" parent_transform="Spine1" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Ranged/TimedCharge/timedChargePrefab.prefab" local_offset="-.06,.2,0.1" local_rotation="-80,180,0" local_scale="1,1,1" parent_transform="Spine1">
+					<requirement name="!HasAttachedPrefab" prefab="@:Other/Items/Weapons/Ranged/TimedCharge/timedChargePrefab.prefab" parent_transform="Spine1" />
+				</triggered_effect>
+
+				<passive_effect name="HealthMax" operation="perc_add" value="-.25"/>
+
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="timedChargePrefab" parent_transform="Spine1" />
+
+				<triggered_effect trigger="onSelfAttackedOther" action="Explode" blast_power="0" block_damage="0" block_radius="5" entity_damage="30" entity_radius="4" damage_type="Special" />
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyStats" stat="Health" operation="set" value="0" />
+				<triggered_effect trigger="onSelfDamagedBlock" action="Explode" blast_power="0" block_damage="0" block_radius="5" entity_damage="30" entity_radius="4" damage_type="Special" />
+				<triggered_effect trigger="onSelfDamagedBlock" action="ModifyStats" stat="Health" operation="set" value="0" />
+				<triggered_effect trigger="onSelfDied" action="Explode" blast_power="0" block_damage="0" block_radius="5" entity_damage="30" entity_radius="4" damage_type="Special" />
+			</effect_group>
+		</buff>
+	</insertafter>
+	
+</config>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  
+	Aircraft Carrier Challenge - Custom Challenge System
+	Author: Devilskut
+	Version: 2.1.1
+	
+	CHALLENGE PROGRESSION:
+	1. Starting Quest Chain - Kill zombies, get geared up and meet Jen.
+    2. Kill Zombies - Kill some Zed heads!
+	3. Gather Materials - Find parts for the UH-60
+	4. Gather2 Materials - Find more parts for the UH-60
+	5. Escape - Clear Camp 666 and meet the Trader 
+	3. Traders - Meet some traders
+-->
+
+<configs>
+
+<set xpath="/challenges">
+	
+	<challenge_category name="DOD High Seas" title="DOD Challenges" icon="ui_game_symbol_challenge_category1"/>
+
+	<!-- ========================================
+	     CHALLENGE GROUPS
+	     ======================================== -->
+	
+	<!-- Group 1: Starting Quest Chain - Kill zombies, get geared up -->
+	<challenge_group category="DOD High Seas" name="Basics" title_key="challengeGroupBasics"
+	                 reward_text_key="challengeGroupBasicsReward" reward_event="challenge_reward_500" link_challenges="true"/>
+
+	<!-- Group 2: Kill Zombies - Kill some Zed heads! -->
+	<challenge_group category="DOD High Seas" name="Kill" title_key="challengeGroupKill"
+	                 reward_text_key="challengeGroupKillReward" reward_event="challenge_reward_Kill" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 3: Gather Materials - Find parts for the UH-60 -->
+	<challenge_group category="DOD High Seas" name="Gather" title_key="challengeGroupGather"
+	                 reward_text_key="challengeGroupGatherReward" reward_event="challenge_reward_gather" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 4: Gather Materials - Find parts for the UH-60 -->
+	<challenge_group category="DOD High Seas" name="Gather2" title_key="challengeGroupGather2"
+	                 reward_text_key="challengeGroupGather2Reward" reward_event="challenge_reward_Gather2" link_challenges="true" hidden_by="Basics"/>
+	
+	<!-- Group 5: Use UH-60 to Escape - Missions -->
+	<challenge_group category="DOD High Seas" name="Escape" title_key="challengeGroupEscape"
+                     reward_text_key="challengeGroupEscapeReward" reward_event="challenge_complete_escape" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 6: Traders - Find Traders -->
+	<challenge_group category="DOD High Seas" name="Traders" title_key="challengeGroupTradersQuests"
+	                 reward_text_key="challengeRewardBonusTradersReward" reward_event="challenge_group_reward_trader_quests" hidden_by="Basics"/>
+	
+	<!-- ========================================
+	     GROUP 1: Starting Quest chain
+	     ======================================== -->
+	
+	<challenge name="killZombiesACC10" title_key="Kill 10 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Basics"
+	           short_description_key="challengeKillZombiesACC10Short" description_key="challengeKillZombiesACC10Desc"
+	           reward_text_key="challenge_reward_500xp" reward_event="DODStarting">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="10"/>
+	</challenge>
+
+	<!-- ========================================
+	     GROUP 2: Kill some Zed heads!
+	     ======================================== -->
+	<challenge name="killZombiesACC50" title_key="Kill 100 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Kill"
+				   short_description_key="challengeKillZombiesACC100Short" description_key="challengeKillZombiesACC100Desc"
+				   reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="100"/>
+	</challenge>
+
+	<challenge name="killZombiesACC100" title_key="Kill 200 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Kill"
+				   short_description_key="challengeKillZombiesACC200Short" description_key="challengeKillZombiesACC200Desc"
+				   reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="200"/>
+	</challenge>
+	
+	<challenge name="killZombiesACC200" title_key="Kill 300 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Kill"
+				   short_description_key="challengeKillZombiesACC300Short" description_key="challengeKillZombiesACC300Desc"
+				   reward_text_key="challenge_reward_2000xp" reward_event="challenge_reward_2000">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="300"/>
+	</challenge>
+
+	<challenge name="killZombiesACC250" title_key="Kill 400 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Kill"
+				   short_description_key="challengeKillZombiesACC400Short" description_key="challengeKillZombiesACC400Desc"
+				   reward_text_key="challenge_reward_2500xp" reward_event="challenge_reward_2500">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="400"/>
+	</challenge>
+
+	<challenge name="killZombiesACC500" title_key="Kill 500 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Kill"
+				   short_description_key="challengeKillZombiesACC500Short" description_key="challengeKillZombiesACC500Desc"
+				   reward_text_key="challenge_reward_5000xp" reward_event="challenge_reward_MGT3M60">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="500"/>
+	</challenge>
+
+	<challenge name="killZombiesACC1000" title_key="Kill 1000 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Kill"
+				   short_description_key="challengeKillZombiesACC1000Short" description_key="challengeKillZombiesACC1000Desc"
+				   reward_text_key="challenge_reward_10000xp">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="1000"/>
+	</challenge>
+	<!-- ========================================
+	     GROUP 3: Gather Materials
+	     ======================================== -->
+
+	<!-- Step 1: Gather Steel -->
+	<challenge name="challengeGatherSteel" title_key="Gather Forged Steel" icon="ui_game_symbol_challenge_harvesting_wrench_vending_machine" group="Gather"
+	           hint="challengeGatherSteelHint"
+	           short_description_key="challengeGatherSteelShort" description_key="challengeGatherSteelDesc">
+		<objective type="Gather" item="resourceForgedSteel" count="200"/>
+	</challenge>
+	<!-- Step 2: Gather Springs -->
+	<challenge name="challengeGatherSprings" title_key="Gather Springs" icon="ui_game_symbol_challenge_harvesting_polymers" group="Gather"
+	           hint="challengeGatherSpringsHint"
+	           short_description_key="challengeGatherSpringsShort" description_key="challengeGatherSpringsDesc">
+		<objective type="Gather" item="resourceSpring" count="50"/>
+	</challenge>
+	<!-- Step 3: Gather Mechanical Parts -->
+	<challenge name="challengeGatherMechanicalParts" title_key="Gather Mechanical Parts" icon="ui_game_symbol_challenge_harvesting_mechanical_parts" group="Gather"
+	           hint="challengeGatherMechanicalPartsHint"
+	           short_description_key="challengeGatherMechanicalPartsShort" description_key="challengeGatherMechanicalPartsDesc">
+		<objective type="Gather" item="resourceMechanicalParts" count="60"/>
+	</challenge>
+
+	<!-- Step 4: Gather Electrical Parts -->
+	<challenge name="challengeGatherElectricalParts" title_key="Gather Electrical Parts" icon="ui_game_symbol_challenge_harvesting_electrical_parts" group="Gather"
+	           hint="challengeGatherElectricalPartsHint"
+	           short_description_key="challengeGatherElectricalPartsShort" description_key="challengeGatherElectricalPartsDesc">
+		<objective type="Gather" item="resourceElectricParts" count="40"/>
+	</challenge>
+	<!-- Step 5: Gather Leather -->
+	<challenge name="challengeGatherLeather" title_key="Gather Leather" icon="ui_game_symbol_challenge_harvesting_leather" group="Gather"
+	           hint="challengeGatherLeatherHint"
+	           short_description_key="challengeGatherLeatherShort" description_key="challengeGatherLeatherDesc">
+		<objective type="Gather" item="resourceLeather" count="50"/>
+	</challenge>
+
+	<!-- Step 6: Gather Duct Tape -->
+	<challenge name="challengeGatherDuctTape" title_key="Gather Duct Tape" icon="ui_game_symbol_challenge_harvesting_polymers" group="Gather"
+	           hint="challengeGatherDuctTapeHint"
+	           short_description_key="challengeGatherDuctTapeShort" description_key="challengeGatherDuctTapeDesc">
+		<objective type="Gather" item="resourceDuctTape" count="40"/>
+	</challenge>
+
+	<!-- Step 7: Gather Headlights -->
+	<challenge name="challengeGatherHeadlights" title_key="Gather Headlights" icon="ui_game_symbol_challenge_harvesting_wrench_cars" group="Gather"
+	           hint="challengeGatherHeadlightsHint"
+	           short_description_key="challengeGatherHeadlightsShort" description_key="challengeGatherHeadlightsDesc">
+		<objective type="Gather" item="resourceHeadlight" count="10"/>
+	</challenge>
+
+	<!-- Step 8: Gather MetalPipes -->
+	<challenge name="challengeGatherMetalPipes" title_key="Gather Metal Pipes" icon="ui_game_symbol_challenge_harvesting_pipes" group="Gather"
+	           hint="challengeGatherMetalPipesHint"
+	           short_description_key="challengeGatherMetalPipesShort" description_key="challengeGatherMetalPipesDesc">
+		<objective type="Gather" item="resourceMetalPipe" count="50"/>
+	</challenge>
+
+	<!-- Step 8: Gather Crucible -->
+	<challenge name="challengeGatherCrucible" title_key="Gather Crucible" icon="ui_game_symbol_challenge_harvesting_wrench_vending_machine" group="Gather"
+	           hint="challengeGatherCrucibleHint"
+	           short_description_key="challengeGatherCrucibleShort" description_key="challengeGatherCrucibleDesc">
+		<objective type="Gather" item="toolForgeCrucible" count="1"/>
+	</challenge>
+
+	<!-- ========================================
+	     GROUP 4: UH-60 (Craft and Place UH-60)
+	     ======================================== -->
+	
+	<!-- Step 1: Gather vehicleWheels -->
+	<challenge name="gathervehicleWheels" title_key="challengeGathervehicleWheels" icon="ui_game_symbol_challenge_harvesting_wrench_cars" group="Gather2"
+	           hint="challengeGathervehicleWheelsHint"
+	           short_description_key="challengeGathervehicleWheelsShort" description_key="challengeGathervehicleWheelsDesc">
+		<objective type="Gather" item="vehicleWheels" count="3"/>
+	</challenge>
+
+	<!-- Step 2: Gather Engines -->
+	<challenge name="gathersmallEngine" title_key="challengeGathersmallEngine" icon="ui_game_symbol_challenge_harvesting_wrench_cars" group="Gather2"
+	           hint="challengeGathersmallEngineHint"
+	           short_description_key="challengeGathersmallEngineShort" description_key="challengeGathersmallEngineDesc">
+		<objective type="Gather" item="smallEngine" count="2"/>
+	</challenge>
+	
+	<!-- Step 3: Gather Batteries -->
+	<challenge name="gatherBatteries" title_key="challengeGatherBatteries" icon="ui_game_symbol_battery" group="Gather2"
+	           hint="challengeGatherBatteriesHint"
+	           short_description_key="challengeGatherBatteriesShort" description_key="challengeGatherBatteriesDesc">
+		<objective type="Gather" item="carBattery" count="2"/>
+	</challenge>
+	
+	<!-- ========================================
+	     GROUP 5: ESCAPE (Reach the TRADER)
+	     ======================================== -->
+
+	
+	<!-- Step 3: Gather UH-60 Accessories -->
+	<challenge name="GatherUH-60Accessories" title_key="Gather UH-60 Accessories" icon="ui_game_symbol_challenge_harvesting_wrench_cars" group="Escape"
+	           hint="challengeGatherUH-60AccessoriesHint"
+	           short_description_key="challengeGatherUH-60AccessoriesShort" description_key="challengeGatherUH-60AccessoriesDesc">
+		<objective type="Gather" item="vehicleUH60accessories" count="1"/>
+	</challenge>
+
+	<!-- Step 4: Gather UH-60 Chassis -->
+	<challenge name="GatherUH-60Chassis" title_key="Gather UH-60 Chassis" icon="ui_game_symbol_challenge_harvesting_wrench_cars" group="Escape"
+	           hint="challengeGatherUH-60ChassisHint"
+	           short_description_key="challengeGatherUH-60ChassisShort" description_key="challengeGatherUH-60ChassisDesc">
+		<objective type="Gather" item="vehicleUH60chassis" count="1"/>
+	</challenge>
+
+	<!-- Step 5: Gather UH-60  -->
+	<challenge name="GatherUH-60" title_key="Gather UH-60" icon="ui_game_symbol_challenge_harvesting_wrench_cars" group="Escape"
+	           hint="challengeGatherUH-60Hint"
+	           short_description_key="challengeGatherUH-60Short" description_key="challengeGatherUH-60Desc">
+		<objective type="Gather" item="vehicleUH60placeable"/>
+	</challenge>
+
+	<!-- ========================================
+	     GROUP 6: Meet some Traders
+	     ======================================== -->
+
+	<challenge name="meetJen" title_key="challengeMeetJen" icon="ui_game_symbol_map_trader" group="Traders"
+		short_description_key="challengeMeetJenShort" description_key="challengeMeetJenDesc"
+		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+		<objective type="MeetTrader" trader_name="npcTraderJen"/>
+	</challenge>
+
+	<challenge name="meetHugh" title_key="challengeMeetHugh" icon="ui_game_symbol_map_trader" group="Traders"
+			short_description_key="challengeMeetHughShort" description_key="challengeMeetHughDesc"
+			reward_text_key="challenge_reward_2500xp" reward_event="challenge_reward_2500">
+		<objective type="MeetTrader" trader_name="npcTraderHugh"/>
+	</challenge>
+
+	<challenge name="meetJoel" title_key="challengeMeetJoel" icon="ui_game_symbol_map_trader" group="Traders"
+		short_description_key="challengeMeetJoelShort" description_key="challengeMeetJoelDesc"
+		reward_text_key="challenge_reward_5000xp" reward_event="challenge_reward_5000">
+		<objective type="MeetTrader" trader_name="npcTraderJoel"/>
+	</challenge>
+
+	<challenge name="meetBob" title_key="challengeMeetBob" icon="ui_game_symbol_map_trader" group="Traders"
+		short_description_key="challengeMeetBobShort" description_key="challengeMeetBobDesc"
+		reward_text_key="challenge_reward_2000xp" reward_event="challenge_reward_2000">
+		<objective type="MeetTrader" trader_name="npcTraderBob"/>
+	</challenge>
+
+	<challenge name="meetRekt" title_key="challengeMeetRekt" icon="ui_game_symbol_map_trader" group="Traders"
+		short_description_key="challengeMeetRektShort" description_key="challengeMeetRektDesc"
+		reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+		<objective type="MeetTrader" trader_name="npcTraderRekt"/>
+	</challenge>
+
+</set>
+
+</configs>

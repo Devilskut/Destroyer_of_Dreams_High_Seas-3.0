@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefabs>
+	<decoration type="model" name="DESTROYER_LEFT" position="237,27,487" rotation="2" y_is_groundlevel="true" />
+	<decoration type="model" name="CF_Oil_Tanker" position="320,27,487" rotation="3" y_is_groundlevel="true" />
+	<decoration type="model" name="DESTROYER_RIGHT" position="359,21,487" rotation="2" y_is_groundlevel="true" />
+	<decoration type="model" name="CF_army_camp_666" position="-111,43,696" rotation="1" y_is_groundlevel="true" />
+	<decoration type="model" name="trader_hub_main_01" position="-604,44,287" rotation="0" y_is_groundlevel="true" />
+	<decoration type="model" name="HughGotIT2" position="277,46,645" rotation="0" y_is_groundlevel="true" />
+	<decoration type="model" name="DESTROYER_CENTER" position="306,38,487" rotation="2" y_is_groundlevel="true" />
+	<decoration type="model" name="UUSS_Arleigh_Burke_Destroyer_02" position="266,27,487" rotation="0" y_is_groundlevel="true" />
+	<decoration type="model" name="rwg_tile_downtown_t" position="387,38,583" rotation="0" y_is_groundlevel="true" />
+	<decoration type="model" name="Spicy Sea" position="310,38,690" rotation="0" y_is_groundlevel="true" />
+	<decoration type="model" name="Spicy_Sea_2" position="237,38,690" rotation="1" y_is_groundlevel="true" />
+	<decoration type="model" name="rwg_tile_industrial_straight" position="387,38,433" rotation="2" y_is_groundlevel="true" />
+	<decoration type="model" name="rwg_tile_industrial_t" position="237,38,733" rotation="1" y_is_groundlevel="true" />
+	<decoration type="model" name="rwg_tile_industrial_t_03" position="387,38,733" rotation="2" y_is_groundlevel="true" />
+	<decoration type="model" name="Spicy Seas" position="237,38,433" rotation="2" y_is_groundlevel="true" />
+	<decoration type="model" name="rwg_tile_industrial_straight" position="87,38,583" rotation="2" y_is_groundlevel="true" />
+	<decoration type="model" name="rwg_tile_industrial_corner" position="87,38,733" rotation="0" y_is_groundlevel="true" />
+	<decoration type="model" name="rwg_tile_industrial_t_03" position="87,38,433" rotation="2" y_is_groundlevel="true" />
+	<decoration type="model" name="Toxic_Docks" position="266,36,690" rotation="0" y_is_groundlevel="true" />
+	<decoration type="model" name="Spicy_Sea_2" position="254,38,733" rotation="0" y_is_groundlevel="true" />
+</prefabs>

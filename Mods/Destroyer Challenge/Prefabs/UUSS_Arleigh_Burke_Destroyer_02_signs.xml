@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<signs version="2">
+  <sign guid="5774c94a-e378-4620-996a-bbce107538cf" name="New Sign" modified="2026-07-20 19:16:17Z" next_poly_id="1" next_text_id="1" next_noise_id="0" next_group_id="0">
+    <layer name="Poly 01" type="PolygonSignLayer" pos="0, 0" rot="0" scale="0.3, 0.3" color="#FFFFFFFF" mode="ColorOnly" sides="27" smoothness="0" starify="0.58" softness="0" dilate="0.32" frequency="8" shapeMode="Normal">
+      <warp type="ArcWarp" rotation="0" radius="2" width="0.1" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, 0" rot="0" scale="0.3, 0.3" color="#006694FF" mode="ColorOnly" font="Dancing Script" text="This way to the sea" direction="-16" spacing="0.65" softness="0" dilate="0" />
+  </sign>
+</signs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+      <xml>
+	    <Name value="DestroyerChallenge" />
+	    <DisplayName value="Destroyer Challenge" />
+		<Version value="2.1.0.0"/>
+		<Description value="Destroyer Challenge"/>
+		<Author value="Devilskut"/>
+		<Website value="" />
+     </xml>

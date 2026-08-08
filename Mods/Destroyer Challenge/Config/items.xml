@@ -1,0 +1,729 @@
+﻿<configs>
+    <insertafter xpath="/items/item[@name]/property[1]">
+		<property name="CreativeMode" value="none"/> 
+	</insertafter>
+	<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set> 
+	
+	<insertAfter xpath="/items/item[@name='ammoBundleMaster']">
+	<item name="Backpack">
+		<property name="CreativeMode" value="None"/>
+		<property name="CustomIcon" value="backpackMedium"/>
+		<property name="ItemTypeIcon" value="bundle"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Mmetal"/>
+		<property name="Stacknumber" value="1"/> <!-- STK ammobundle high -->
+		<property name="EconomicValue" value="0"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Delay" value="0"/>
+			<property name="Use_time" value="0"/>
+			<property name="Sound_start" value="UseActions/open_backpack"/>
+			<property name="Create_item" value="biomeBadge1,biomeBadge2,biomeBadge3,biomeBadge4,meleeToolRepairT0StoneAxe,foodCanChili,medicalFirstAidBandage,meleeWpnBladeT1HuntingKnife"/>
+			<property name="Create_item_count" value="1,1,1,1,5-6,1,1,1"/>
+		</property>
+	</item>	
+	</insertAfter>
+	
+	<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">22</set>
+	<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">11</set>
+	<set xpath="/items/item[@name='foodEgg']/property[@name='EconomicValue']/@value">30</set>
+
+	<remove xpath="/items/item[@name='ammoProjectileZombieBoulder']" />
+	<remove xpath="/items/item[@name='ammoProjectileZombieBoulderFeral']" />
+	<remove xpath="/items/item[@name='ammoProjectileZombieBoulderCharged']" />
+	<remove xpath="/items/item[@name='ammoProjectileZombieBoulderInfernal']" />
+
+	<insertbefore xpath="/items/item[@name='meleeHandAnimalZombieDog']">
+
+		<item name="ammoProjectileZombieBoulder">
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Boulder/BoulderThrownPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="DamageEntity" value="50"/>
+				<property name="DamageBlock" value="50"/>
+				<property name="ExplosionParticleIndex" value="36"/>
+				<property name="ExplosionRadiusBlocks" value="2.5"/>
+				<property name="ExplosionRadiusEntities" value="3.9"/>
+				<property name="ExplosionEntityDamage" value="70"/>
+				<property name="ExplosionBlockDamage" value="50"/>
+				<property name="ExplosionDamageBonusearth" value="0"/>
+				<property name="ExplosionDamageBonuswater" value="0"/>
+				<property name="FlyTime" value="-5"/>
+				<!--	value calculates ballistic velocity to target over this +duration -->
+				<property name="Velocity" value="50"/>
+				<!-- ballistic max distance for duration -->
+				<property name="Gravity" value="-8"/>
+				<property name="LifeTime" value="7"/>
+				<property name="CollisionRadius" value=".22"/>
+				<property name="Buff" value="buffInjuryStunned03"/>
+			</property>
+			<effect_group name="ammoProjectileZombieBoulder" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="1800"/> -->
+				<!--AbrasionRegular-->
+			</effect_group>
+		</item>
+
+		<item name="ammoProjectileZombieBoulderFeral">
+			<property name="Extends" value="ammoProjectileZombieBoulder"/>
+			<property name="Material" value="Morganic"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="DamageEntity" value="60"/>
+				<property name="DamageBlock" value="60"/>
+				<property name="ExplosionParticleIndex" value="36"/>
+				<property name="ExplosionRadiusBlocks" value="2.5"/>
+				<property name="ExplosionRadiusEntities" value="4.7"/>
+				<property name="ExplosionEntityDamage" value="80"/>
+				<property name="ExplosionBlockDamage" value="60"/>
+				<property name="ExplosionDamageBonusearth" value="0"/>
+				<property name="ExplosionDamageBonuswater" value="0"/>
+				<property name="FlyTime" value="-5"/>
+				<!-- -value calculates ballistic velocity to target over this +duration -->
+				<property name="Velocity" value="50"/>
+				<!-- ballistic max distance for duration -->
+				<property name="Gravity" value="-8"/>
+				<property name="LifeTime" value="7"/>
+				<property name="CollisionRadius" value=".22"/>
+				<property name="Buff" value="buffInjuryStunned03"/>
+			</property>
+			<effect_group name="ammoProjectileZombieBoulder" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
+			</effect_group>
+		</item>
+
+		<item name="ammoProjectileZombieBoulderCharged">
+			<property name="Extends" value="ammoProjectileZombieBoulder"/>
+			<property name="Material" value="Morganic"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="DamageEntity" value="90"/>
+				<property name="DamageBlock" value="70"/>
+				<property name="ExplosionParticleIndex" value="36"/>
+				<property name="ExplosionRadiusBlocks" value="2.5"/>
+				<property name="ExplosionRadiusEntities" value="4.7"/>
+				<property name="ExplosionEntityDamage" value="90"/>
+				<property name="ExplosionBlockDamage" value="70"/>
+				<property name="ExplosionDamageBonusearth" value="0"/>
+				<property name="ExplosionDamageBonuswater" value="0"/>
+				<property name="FlyTime" value="-5"/>
+				<!-- -value calculates ballistic velocity to target over this +duration -->
+				<property name="Velocity" value="50"/>
+				<!-- ballistic max distance for duration -->
+				<property name="Gravity" value="-8"/>
+				<property name="LifeTime" value="7"/>
+				<property name="CollisionRadius" value=".22"/>
+				<property name="Buff" value="buffInjuryStunned03"/>
+			</property>
+			<effect_group name="ammoProjectileZombieBoulder" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
+			</effect_group>
+		</item>
+
+		<item name="ammoProjectileZombieBoulderInfernal">
+			<property name="Extends" value="ammoProjectileZombieBoulder"/>
+			<property name="Material" value="Morganic"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="DamageEntity" value="100"/>
+				<property name="DamageBlock" value="100"/>
+				<property name="ExplosionParticleIndex" value="36"/>
+				<property name="ExplosionRadiusBlocks" value="2.5"/>
+				<property name="ExplosionRadiusEntities" value="4.7"/>
+				<property name="ExplosionEntityDamage" value="100"/>
+				<property name="ExplosionBlockDamage" value="100"/>
+				<property name="ExplosionDamageBonusearth" value="0"/>
+				<property name="ExplosionDamageBonuswater" value="0"/>
+				<property name="FlyTime" value="-5"/>
+				<!-- -value calculates ballistic velocity to target over this +duration -->
+				<property name="Velocity" value="50"/>
+				<!-- ballistic max distance for duration -->
+				<property name="Gravity" value="-8"/>
+				<property name="LifeTime" value="7"/>
+				<property name="CollisionRadius" value=".22"/>
+				<property name="Buff" value="buffInjuryStunned03"/>
+			</property>
+			<effect_group name="ammoProjectileZombieBoulder" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
+			</effect_group>
+		</item>
+	</insertbefore>
+	
+	<set xpath="//item[@name='resourceCoal']//property[@name='Group']/@value">Resources,Chemicals,CFChemicals</set>
+	<set xpath="//item[@name='resourceAcid']//property[@name='Group']/@value">Resources,Chemicals,CFChemicals</set>
+	<insertbefore xpath="//item[@name='resourceAcid']//property[1]">
+		<property name="UnlockedBy" value="craftingVehicles"/>
+	</insertbefore>
+	
+	<insertafter xpath="//item[@name='resourceAcid']">
+	<item name="resourceBatteryAcid">
+		<property name="CreativeMode" value="None"/>
+		<property name="CustomIcon" value="resourceAcid"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="DescriptionKey" value="resourceBatteryAcidDesc"/>
+		<property name="Material" value="MresourceAcid"/>
+		<property name="Weight" value="0"/>
+		<property name="Stacknumber" value="100"/> <!-- STK resource -->
+		<property name="EconomicValue" value="140"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="Group" value="Resources,Chemicals"/>
+	</item>
+	</insertafter>
+
+	<set xpath="//item[@name='resourceWaterFilter']//property[@name='Stacknumber']/@value">1</set>
+	<insertafter xpath="//item[@name='drugAntibiotics']">
+	<item name="drugAntibioticsDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="CustomIcon" value="drugAntibiotics"/>
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Health/painkillersPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="EconomicValue" value="240"/>
+		<property name="Stacknumber" value="10"/> <!-- STK loot -->
+		<property name="UnlockedBy" value="craftingMedical"/><!-- perkPhysician,drugAntibioticsSchematic, -->
+		<property name="DisplayType" value="cureInfection"/>
+		<property name="Group" value="Science,CFChemicals,Medical,TCMedical"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Sound_start" value="player_painkillers"/>
+		</property>
+		<effect_group tiered="false">
+			<display_value name="dCureInfection" value=".25"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="25"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
+		</effect_group>
+	</item>
+	</insertafter>
+	
+	<append xpath="/items">
+
+		<item name="Mission_1_Find Blueprint">
+			<property name="Extends" value="adminQuestTicketMaster"/>
+			<property name="DescriptionKey" value="Mission_1_Find BlueprintDesc"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIconTint" value="00ff00"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_DestroyerChallenge"/>
+			</property>
+		</item>
+		<item name="Mission_2_Fort 666">
+			<property name="Extends" value="adminQuestTicketMaster"/>
+			<property name="DescriptionKey" value="Mission_2_Fort 666Desc"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIconTint" value="ff00bf"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_DestroyerChallenge08"/>
+			</property>
+		</item>
+
+		<item name="SkillMagazine10">
+			<property name="Extends" value="masterSkillMagazine"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Tags" value="admin"/>
+			<property name="CustomIcon" value="bookTechPlanet"/>
+			<property name="CustomIconTint" value="98FB98"/>
+			<property name="DescriptionKey" value="adminSkillMagazine2Desc"/>
+			<property name="SoundPickup" value="magazine_grab"/>
+			<property name="SoundPlace" value="magazine_place"/>
+
+			<property class="Action0">
+				<property name="Sound_start" value="read_skillbook_final"/>
+				<property name="Sound_in_head" value="true"/>
+			</property>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRepairTools" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingKnuckles" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBlades" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingClubs" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSledgehammers" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBows" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSpears" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHandguns" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingShotguns" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRifles" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMachineGuns" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingExplosives" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRobotics" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingArmor" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingElectrician" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTraps" level="10" show_message="false"/>
+			</effect_group>
+		</item>
+		
+		<!-- ARMOR SETS -->
+		
+		<item name="Armor">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="HoldType" value="21"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="CustomIcon" value="backpackMedium"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="60"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Special Items"/>
+		</item>
+		
+		<item name="Weapon">
+		<property name="Extends" value="Armor"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="CustomIcon" value="backpackMedium"/>
+		<property name="CustomIconTint" value="ff00bf"/>
+		<property name="Material" value="Mpaper"/>
+		<property name="EconomicValue" value="60"/>
+		</item>
+
+		<item name="LumberJack">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorLumberjackOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorLumberjackBoots,armorLumberjackGloves,armorLumberjackOutfit,armorLumberjackHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Preacher">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorPreacherOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorPreacherBoots,armorPreacherGloves,armorPreacherOutfit,armorPreacherHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Rogue">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorRogueOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorRogueBoots,armorRogueGloves,armorRogueOutfit,armorRogueHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Athletic">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorAthleticOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorAthleticBoots,armorAthleticGloves,armorAthleticOutfit,armorAthleticHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Enforcer">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorEnforcerOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorEnforcerBoots,armorEnforcerGloves,armorEnforcerOutfit,armorEnforcerHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Farmer">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorFarmerOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorFarmerBoots,armorFarmerGloves,armorFarmerOutfit,armorFarmerHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Biker">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorBikerOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorBikerBoots,armorBikerGloves,armorBikerOutfit,armorBikerHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Scavenger">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorScavengerOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorScavengerBoots,armorScavengerGloves,armorScavengerOutfit,armorScavengerHelmet"/>
+				<property name="Create_item_count" value="1,2-3,2-3,2-3,2-3"/>
+			</property>
+		</item>
+
+		<item name="Ranger">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorRangerOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorRangerBoots,armorRangerGloves,armorRangerOutfit,armorRangerHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Commando">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorCommandoOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorCommandoBoots,armorCommandoGloves,armorCommandoOutfit,armorCommandoHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Assassin">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorAssassinOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorAssassinBoots,armorAssassinGloves,armorAssassinOutfit,armorAssassinHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Miner">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorMinerOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorMinerBoots,armorMinerGloves,armorMinerOutfit,armorMinerHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Nomad">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorNomadOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorNomadBoots,armorNomadGloves,armorNomadOutfit,armorNomadHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Nerd">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorNerdOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorNerdBoots,armorNerdGloves,armorNerdOutfit,armorNerdHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+
+		<item name="Raider">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="armorRaiderOutfit"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="modArmorHelmetLight,armorRaiderBoots,armorRaiderGloves,armorRaiderOutfit,armorRaiderHelmet"/>
+				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
+			</property>
+		</item>
+		
+		<!-- WEAPON SETS -->
+
+		<item name="Perception">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="gunRifleT0PipeRifle"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="gunRifleT0PipeRifle,meleeWpnSpearT0StoneSpear,thrownAmmoPipeBomb,riflesSkillMagazine,explosivesSkillMagazine,spearsSkillMagazine,salvageToolsSkillMagazine,ammo762mmBulletBall"/>
+				<property name="Create_item_count" value="5-6,5-6,3,5,5,5,5,15"/>
+			</property>
+		</item>
+
+		<item name="Strength">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="gunShotgunT0PipeShotgun"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="meleeWpnSledgeT0StoneSledgehammer,meleeWpnClubT0WoodenClub,gunShotgunT0PipeShotgun,shotgunsSkillMagazine,sledgehammersSkillMagazine,clubsSkillMagazine,harvestingToolsSkillMagazine,ammoShotgunShell"/>
+				<property name="Create_item_count" value="5-6,5-6,5-6,5,5,5,5,15"/>
+			</property>
+		</item>
+
+		<item name="Fortitude">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="gunMGT0PipeMachineGun"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="gunMGT0PipeMachineGun,meleeWpnKnucklesT0LeatherKnuckles,machineGunsSkillMagazine,knucklesSkillMagazine,ammo762mmBulletBall"/>
+				<property name="Create_item_count" value="5-6,5-6,5,5,15"/>
+			</property>
+		</item>
+
+		<item name="Agility">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="gunHandgunT0PipePistol"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="meleeWpnBladeT0BoneKnife,gunHandgunT0PipePistol,gunBowT0PrimitiveBow,handgunsSkillMagazine,bowsSkillMagazine,bladesSkillMagazine,ammo9mmBulletBall"/>
+				<property name="Create_item_count" value="5-6,5-6,5-6,5,5,5,30"/>
+			</property>
+		</item>
+
+		<item name="Intellect">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="meleeWpnBatonT0PipeBaton"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0.5"/>
+				<property name="Use_time" value="1"/>
+				<property name="Sound_start" value="wrench_harvest"/>
+				<property name="Create_item" value="meleeWpnBatonT0PipeBaton,gunBotT1JunkSledge,roboticsSkillMagazine,workstationSkillMagazine,repairToolsSkillMagazine"/>
+				<property name="Create_item_count" value="5-6,5-6,5,5,5"/>
+			</property>
+		</item> 
+	</append>	
+</configs>

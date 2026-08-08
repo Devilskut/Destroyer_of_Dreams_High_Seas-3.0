@@ -1,0 +1,1503 @@
+<configs>
+
+<!-- ZOMBIE_ARLENE ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieArlene']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag"/>			    
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieArleneFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag"/>
+	</append>
+
+<!-- ZOMBIE_MARLENE ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieMarlene']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieMarleneFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieMarleneRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag"/>
+	</append>
+	
+<!-- ZOMBIE_PARTY_GIRL ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombiePartyGirl']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Party Bag"/>     
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombiePartyGirlFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Party Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombiePartyGirlRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Party Bag"/>
+	</append>
+	
+<!-- ZOMBIE_NURSE ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieNurse']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Medical Bag"/>      
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieNurseFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Medical Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieNurseRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Medical Bag"/>
+	</append>
+	
+<!-- ZOMBIE_JOE ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieJoe']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>     		
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieJoeFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>       
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieJoeRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>       
+	</append>
+	
+<!-- ZOMBIE_STEVE ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieSteve']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>  		
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieSteveFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieSteveRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+<!-- ZOMBIE_TOM_CLARK ex. Regular, Feral, Radiated!-->
+	<append xpath="/entity_classes/entity_class[@name='zombieTomClark']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieTomClarkFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieTomClarkRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+<!-- ZOMBIE_BUSINESSMAN ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieBusinessMan']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Party Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieBusinessManFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Party Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieBusinessManRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Party Bag"/>
+	</append>
+	
+<!-- ZOMBIE_BURNT ex. Regular, Feral, Radiated!-->
+	<append xpath="/entity_classes/entity_class[@name='zombieBurnt']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+<!-- ZOMBIE_SPIDER ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieSpider']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieSpiderRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+<!-- ZOMBIE_BOE ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieBoe']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieBoeFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieBoeRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+<!-- ZOMBIE_HAZMAT ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Bio Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmatFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Bio Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmatRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Bio Bag"/>      
+	</append>
+	
+<!-- ZOMBIE_JANITOR ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieJanitor']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Janitor Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieJanitorFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Janitor Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieJanitorRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Janitor Bag"/>     
+	</append>
+	
+<!-- ZOMBIE_INMATE ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieInmate']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Confiscated Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieInmateFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Confiscated Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieInmateRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Confiscated Bag"/>      
+	</append>
+	
+<!-- ZOMBIE_MOE ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieMoe']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieMoeFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieMoeRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>
+	</append>
+	
+<!-- ZOMBIE_LAB ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieLab']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Medical Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieLabFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Medical Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieLabRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Medical Bag"/>
+	</append>
+	
+<!-- ZOMBIE_DARLENE ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieDarlene']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag"/>        
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieDarleneFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag"/>    
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieDarleneRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag"/>      
+	</append>
+	
+<!-- ZOMBIE_YO ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieYo']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>       		
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieYoFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>       
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieYoRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>     
+	</append>
+	
+<!-- ZOMBIE_UTILITY_WORKER ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Utility Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Utility Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Utility Bag"/>        
+	</append>
+	
+<!-- ZOMBIE_BIKER ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieBiker']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Biker Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieBikerFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Biker Bag"/>      
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieBikerRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Biker Bag"/>       	
+	</append>
+	
+<!-- ZOMBIE_LUMBERJACK ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieLumberjack']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Lumber Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieLumberjackFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Lumber Bag"/>      
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieLumberjackRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Lumber Bag"/>      
+	</append>
+	
+<!-- ZOMBIE_FEMALE_FAT ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieFemaleFat']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Big Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieFemaleFatFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Big Bag"/>     
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Big Bag"/>   
+	</append>
+	
+<!-- ZOMBIE_FAT_HAWAIIAN ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Big Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiianFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Big Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Big Bag"/>
+	</append>
+	
+<!-- ZOMBIE_BOWLER ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieBowler']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Big Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieBowlerFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Big Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieBowlerRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Big Bag"/>
+	</append>
+	
+<!-- ZOMBIE_FAT_COP ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieFatCop']">groupFatCopLoot
+		<property name="LootDropProb" value="1"/>
+	    <property name="LootDropEntityClass" value="Cop Bag"/>
+    </append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Cop Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Cop Bag"/>       		
+	</append>
+	
+<!-- ZOMBIE_SKATEBOARDER ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieSkateboarder']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Thug Bag"/>      
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieSkateboarderFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Thug Bag"/>     
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieSkateboarderRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Thug Bag"/>      
+	</append>
+	
+<!-- ZOMBIE_SOLDIER ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieSoldier']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Soldier Bag"/>       
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Soldier Bag"/>        
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Soldier Bag"/>    
+	</append>
+	
+<!-- ZOMBIE_WIGHT_FERAL ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieWightFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Wight Bag"/>      
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieWightRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Wight Bag"/> 	
+	</append>
+	
+<!-- ZOMBIE_SCREAMER ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieScreamer']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag"/>
+	</append>
+	
+<!-- ZOMBIE_MUTATED ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieMutated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Mutant Bag"/>      
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieMutatedFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Mutant Bag"/>      
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieMutatedRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Mutant Bag"/>	
+	</append>
+	
+<!-- ZOMBIE_DEMOLITION ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieDemolition']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Soldier Bag"/>
+	</append>
+	
+<!-- ZOMBIE_CRAWLER ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieSteveCrawler']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>      
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieSteveCrawlerFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Duffle Bag 2"/>   		
+	</append>
+
+	<!-- ZOMBIE_CHUCK ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieChuck']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Chip Bag"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieChuckFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Chip Bag"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieChuckRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Chip Bag"/>
+	</append>
+
+	<!-- ZOMBIE_RANCHER ex. Regular, Feral, Radiated !-->
+	<append xpath="/entity_classes/entity_class[@name='zombieRancher']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Rancher Bag"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieRancherFeral']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Rancher Bag"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieRancherRadiated']">
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="Rancher Bag"/>
+	</append>
+
+
+	<remove xpath="//entity_class[@name='animalDireWolf']"/>
+
+	<append xpath="/entity_classes">
+
+		<entity_class name="Duffle Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieArlene"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Duffle Bag 2">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombiejoe"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Medical Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieLab"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Confiscated Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieInmate"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Biker Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieBiker"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Wight Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="ZombieWightFeral"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Mutant Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieMutated"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="Thug Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieSkateboarder"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Party Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombiePartyGirl"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Cop Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieFatCop"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Utility Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieUtilityWorker"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Soldier Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieSoldier"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Lumber Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieLumberjack"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Big Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieFemaleFat"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Rancher Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieRancher"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Janitor Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieJanitor"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Chip Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieChuck"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+
+		<entity_class name="Bio Bag">
+			<property name="Class" value="EntityLootContainer"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Mesh" value="@:Entities/LootContainers/zpackGoldPrefab.prefab"/>
+			<property name="ModelType" value="Custom"/>
+			<property name="Prefab" value="Backpack"/>
+			<property name="Parent" value="Backpack"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="TimeStayAfterDeath" value="800"/>
+			<property name="LootList" value="zombieMaleHazmat"/>
+			<property name="Faction" value="none"/>
+		</entity_class>
+		
+		<entity_class name="animalDireWolf" extends="animalWolf">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="EntityFlags" value="animal,zombie"/>
+			<property name="Tags" value="entity,animal,zombie,hostile,wolf,perkAT05"/>
+			<property name="PhysicsBody" value="AWolf"/>
+			<property name="Mass" value="180"/>
+			<property name="Prefab" value="@:Entities/Animals/DireWolf/animalDireWolfPrefab.prefab"/>
+			<property name="PrefabCombined" value="true"/>
+			<property name="SizeScale" value="1.4"/>
+			<property name="DismemberMultiplierHead" value="0"/>
+
+			<property name="AISeeOffset" value=".9"/>
+			<property name="AIPathCostScale" value=".15, .2"/>
+			<property name="AITask" value="
+	BreakBlock|
+	DestroyArea|
+	Territorial|
+	ApproachDistraction|
+	ApproachAndAttackTarget class=EntityPlayer,25,EntityBandit,20,EntityAnimalStag,30|
+	ApproachSpot|
+	Look|
+	Wander|
+	"/>
+			<property name="AITarget" value="
+	SetAsTargetIfHurt class=EntityPlayer,EntityBandit,EntityEnemyAnimal|
+	BlockingTargetTask|
+	SetNearestCorpseAsTarget flags=edible|
+	SetNearestEntityAsTarget class=EntityPlayer,17,15,EntityBandit,0,-8,EntityAnimalStag,0,0|
+	"/>
+
+			<property name="SoundAlert" value="wolfdirealert"/>
+			<property name="SoundAttack" value="wolfdireattack"/>
+			<property name="SoundDeath" value="wolfdiredeath"/>
+			<property name="SoundGiveUp" value="wolfdiregiveup"/>
+			<property name="SoundHurt" value="wolfdirepain"/>
+			<property name="SoundRandom" value="wolfdireroam"/>
+			<property name="SoundSense" value="wolfdiresense"/>
+			<property name="SoundStepType" value="animalpawstep"/>
+
+			<!-- Gameplay -->
+			<property name="MoveSpeedAggro" value="1, 1.1"/>
+			<property name="JumpMaxDistance" value="5, 6"/>
+			<property name="HandItem" value="meleeHandAnimalLittleBear"/>
+			<property name="Immunity" value="sickness;disease;wellness"/>
+			<!-- bleeding; -->
+			<property name="PainResistPerHit" value=".95"/>
+			<property name="DeadBodyHitPoints" value="450"/>
+
+			<property name="ExperienceGain" value="2000"/>
+			<!-- XP Dire Wolf -->
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".5"/>
+			<!-- Dire Wolf -->
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="25"/>
+			<!-- animalDireWolf -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="12"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="200"/>
+			</effect_group>
+
+			<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_direwolf,clear_sleeper"/>
+		</entity_class>
+
+		<entity_class name="Devils_Pup" extends="animalWolf">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,animal,hostile,wolf,perkAT02,perkAT03,DKboss"/>
+			<property name="MapIcon" value="ui_game_symbol_tracking_wolf"/>
+			<property name="TrackerIcon" value="ui_game_symbol_tracking_wolf"/>
+			<property name="AvatarController" value="AvatarAnimalController"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="AWolf"/>
+			<property name="Mass" value="95"/>
+			<property name="Prefab" value="@:Entities/Animals/DireWolf/animalDireWolfPrefab.prefab"/>
+			<property name="SizeScale" value=".5"/>
+			<property name="DismemberMultiplierHead" value="0"/>
+
+			<property name="AIPathCostScale" value=".15, .2"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="RootMotion" value="true"/>
+			<property name="RagdollOnDeathChance" value=".5"/>
+
+			<property name="AITask" value="
+	BreakBlock|
+	DestroyArea|
+	Territorial|
+	ApproachDistraction|
+	ApproachAndAttackTarget class=EntityPlayer,25,EntityBandit,20,EntityAnimalStag,30|
+	ApproachSpot|
+	Look|
+	Wander|
+	"/>
+			<property name="AITarget" value="
+	SetAsTargetIfHurt class=EntityPlayer,EntityBandit,EntityEnemyAnimal|
+	BlockingTargetTask|
+	SetNearestCorpseAsTarget flags=edible|
+	SetNearestEntityAsTarget class=EntityPlayer,17,15,EntityBandit,0,-8,EntityAnimalStag,0,0|
+	"/>
+
+			<property name="SoundAlert" value="wolfdirealert"/>
+			<property name="SoundAttack" value="wolfdireattack"/>
+			<property name="SoundDeath" value="wolfdiredeath"/>
+			<property name="SoundGiveUp" value="wolfdiregiveup"/>
+			<property name="SoundHurt" value="wolfdirepain"/>
+			<property name="SoundRandom" value="wolfdireroam"/>
+			<property name="SoundSense" value="wolfdiresense"/>
+			<property name="SoundStepType" value="animalpawstep"/>
+
+			<!-- Gameplay  -->
+			<property name="HandItem" value="meleeHandAnimalCoyote"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="30"/>
+			</effect_group>
+
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="2"/>
+			<!-- animalWolf -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
+
+			<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_wolf,clear_sleeper" />
+		</entity_class>
+
+		<!-- *** CHICKEN -->
+
+		<entity_class name="Colonel Sanders" extends="animalTemplateHostile">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,animal,chicken,hostile,perkAT03,perkAT04,perkAT05"/>
+			<property name="MapIcon" value="ui_game_symbol_tracking_chicken"/>
+			<property name="TrackerIcon" value="ui_game_symbol_tracking_chicken"/>
+			<property name="AvatarController" value="AvatarAnimalController"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="Prefab" value="@:Entities/Animals/Bird/animalBirdChickenPrefab.prefab"/>
+			<property name="SizeScale" value="2"/>
+			<property name="PrefabCombined" value="true"/>
+			<property name="Parent" value="Animals"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="Faction" value="animals"/>
+			<property name="PhysicsBody" value="chicken"/>
+			<property name="Mass" value="40"/>
+			<property name="Weight" value="15"/>
+			<property name="SoundHurt" value="chickenpain"/>
+			<property name="SoundDeath" value="chickendeath"/>
+			<property name="SoundStepType" value="animallightstep"/>
+			<property name="SwimOffset" value="2"/>
+			<property name="CanBigHead" value="false"/>
+			<property name="AIFeralSense" value="1.6"/>
+			<property name="AIGroupCircle" value="0"/>
+			<property name="AITask-1" value="BreakBlock"/>
+			<property name="AITask-2" value="ApproachAndAttackTarget" data="class=EntityPlayer,100"/>
+			<property name="AITask-3" value="ApproachSpot"/>
+			<property name="AITask-4" value=""/>
+			<property name="AITarget-1" value="SetAsTargetIfHurt" data="class=EntityPlayer"/>
+			<property name="AITarget-2" value="BlockingTargetTask"/>
+			<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="flags=player"/>
+			<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,22,20"/>
+			<property name="AITarget-5" value=""/>
+
+			<property name="MoveSpeed" value=".4"/>
+			<property name="MoveSpeedAggro" value="1.65, 1.82"/>
+
+			<property name="MaxViewAngle" value="360"/>
+			<property name="SightRange" value="100"/>
+			<property name="SightLightThreshold" value="-2,-2"/>
+
+			<!-- Gameplay -->
+			<property name="HandItem" value="meleeHandAnimalCoyote"/>
+			<property name="MoveSpeedPanic" value="1.5"/>
+			<property name="ExperienceGain" value="130"/>
+			<!-- XP Murder Chicken -->
+			<property name="DeadBodyHitPoints" value="175"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="5"/>
+			<!-- animalChicken -->
+			<drop event="Harvest" name="foodEgg" tag="butcherHarvest" count="5,9"/>
+			<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="12"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="8"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="4"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="100"/>
+			</effect_group>
+
+			<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_chicken"/>
+		</entity_class>
+		
+	<!-- Navy Zombies by Shrader -->
+		
+		<entity_class name="zombieNavyCaptain" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,allbiome"/>
+			<property name="Censor" value="1,2"/>
+			<property name="SoundAlert" value="zombiemalealert"/>
+			<property name="SoundSense" value="zombiemalesense"/>
+			<property name="SoundHurt" value="zombiemalepain"/>
+			<property name="SoundDeath" value="zombiemaledeath"/>
+			<property name="SoundAttack" value="zombiemaleattack"/>
+			<property name="SoundSleeperSense" value="sleepersense"/>
+			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
+			<property name="Mesh" value="#@modfolder:Resources/DevilsCustomZeds.unity3d?NavyCaptain" />
+			<property name="SoundStepType" value="barehvystep"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="2"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="650"/>
+			<property name="DeadBodyHitPoints" value="1000"/>
+			<property name="PhysicsBody" value="ZombieCustom002"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="false"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="DanceType" value="1" />
+			<property name="PainResistPerHit" value="100"/>
+			<property name="Dismemberment" value="true"/>
+
+			<!-- Dismemberment -->
+			<property name ="DismemberTag_L_HeadGore" value=""/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value=""/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value=""/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value=""/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value=""/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value=""/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value=""/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value=""/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value=""/>
+
+			<!-- Zombie scale -->
+			<property name="SizeScale" value="1"/>
+
+			<!-- Zombie Loot -->
+			<property name="LootDropProb" value="1"/>
+			<property name="LootDropEntityClass" value="Utility Bag"/>
+
+			<!-- Zombie HP scale -->
+			<property name="MoveSpeedAggro" value="0.2, 1.2"/>
+			<property name="JumpMaxDistance" value=".8, 1.1"/>
+			<property name="HandItem" value="meleeHandZombieStrong"/>
+			<property name="ExperienceGain" value="^xpStrong01"/>
+			<!-- Zombie HP scale -->
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="^healthStrong"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="zombieNavyFeralCaptain" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,allbiome,feral"/>
+			<property name="Censor" value="1,2"/>
+			<property name="SoundAlert" value="zombiemalealert"/>
+			<property name="SoundSense" value="zombiemalesense"/>
+			<property name="SoundHurt" value="zombiemalepain"/>
+			<property name="SoundDeath" value="zombiemaledeath"/>
+			<property name="SoundAttack" value="zombiemaleattack"/>
+			<property name="SoundSleeperSense" value="sleepersense"/>
+			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
+			<property name="Mesh" value="#@modfolder:Resources/DevilsCustomZeds.unity3d?NavyFeralCaptain" />
+			<property name="SoundStepType" value="barehvystep"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="2"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="2735"/>
+			<property name="DeadBodyHitPoints" value="1000"/>
+			<property name="PhysicsBody" value="ZombieCustom002"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="false"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="DanceType" value="1" />
+			<property name="PainResistPerHit" value="100"/>
+			<property name="Dismemberment" value="true"/>
+
+			<!-- Dismemberment -->
+			<property name ="DismemberTag_L_HeadGore" value=""/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value=""/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value=""/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value=""/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value=""/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value=""/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value=""/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value=""/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value=""/>
+			<!-- Zombie scale -->
+			<property name="SizeScale" value="1"/>
+			<!-- Zombie Loot -->
+			<property name="LootDropProb" value="1"/>
+			<property name="LootDropEntityClass" value="Utility Bag"/>
+			
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<!-- Feral -->
+			<property name="PainResistPerHit" value=".7"/>
+			<!-- Feral -->
+			<property name="MoveSpeedAggro" value="0.45, 1.3"/>
+			<!-- Strong Feral -->
+			<property name="JumpMaxDistance" value="1.8, 2.5"/>
+			<property name="HandItem" value="meleeHandZombieStrongFeral"/>
+			<property name="ExperienceGain" value="^xpStrongFeral00"/>
+			<!-- Feral Zombie HP scale -->
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="^healthStrongFeral"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="zombieNavyRadiatedCaptain" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,allbiome,feral,radiated"/>
+			<property name="Censor" value="1,2"/>
+			<property name="SoundAlert" value="zombiemalealert"/>
+			<property name="SoundSense" value="zombiemalesense"/>
+			<property name="SoundHurt" value="zombiemalepain"/>
+			<property name="SoundDeath" value="zombiemaledeath"/>
+			<property name="SoundAttack" value="zombiemaleattack"/>
+			<property name="SoundSleeperSense" value="sleepersense"/>
+			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
+			<property name="Mesh" value="#@modfolder:Resources/DevilsCustomZeds.unity3d?NavyRadiatedCaptain" />
+			<property name="SoundStepType" value="barehvystep"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="2"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="2735"/>
+			<property name="DeadBodyHitPoints" value="1000"/>
+			<property name="PhysicsBody" value="ZombieCustom002"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="false"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="DanceType" value="1" />
+			<property name="PainResistPerHit" value="100"/>
+			<property name="Dismemberment" value="true"/>
+
+			<!-- Dismemberment -->
+			<property name ="DismemberTag_L_HeadGore" value=""/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value=""/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value=""/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value=""/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value=""/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value=""/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value=""/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value=""/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value=""/>
+			<!-- Zombie Loot -->
+			<property name="LootDropProb" value="1"/>
+			<property name="LootDropEntityClass" value="Utility Bag"/>
+
+			<property name="SizeScale" value="1"/>
+			
+			<property name="DismemberMultiplierHead" value=".4"/>
+			<property name="DismemberMultiplierArms" value=".4"/>
+			<property name="DismemberMultiplierLegs" value=".4"/>
+			<!-- Radiated -->
+			<property name="PainResistPerHit" value=".9"/>
+			<property name="MoveSpeedAggro" value="0.45, 1.3"/>
+			<property name="JumpMaxDistance" value="1.8, 2.5"/>
+			<property name="HandItem" value="meleeHandZombieCopFeral"/>
+			<!-- Radiated -->
+			<property name="ExperienceGain" value="^xpStrongRadiated01"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="^healthStrongRadiated"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<entity_class name="zombieNavySeaman" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,allbiome"/>
+			<property name="Censor" value="1,2"/>
+			<property name="SoundAlert" value="zombiemalealert"/>
+			<property name="SoundSense" value="zombiemalesense"/>
+			<property name="SoundHurt" value="zombiemalepain"/>
+			<property name="SoundDeath" value="zombiemaledeath"/>
+			<property name="SoundAttack" value="zombiemaleattack"/>
+			<property name="SoundSleeperSense" value="sleepersense"/>
+			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
+			<property name="Mesh" value="#@modfolder:Resources/DevilsCustomZeds.unity3d?NavySeaman" />
+			<property name="SoundStepType" value="barehvystep"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="2"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="500"/>
+			<property name="DeadBodyHitPoints" value="1000"/>
+			<property name="PhysicsBody" value="ZombieCustom002"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="false"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="HandItem" value="meleeHandZombie01"/>
+			<property name="DanceType" value="1" />
+			<property name="PainResistPerHit" value="100"/>
+			<property name="Dismemberment" value="true"/>
+
+			<!-- Dismemberment -->
+			<property name ="DismemberTag_L_HeadGore" value=""/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value=""/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value=""/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value=""/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value=""/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value=""/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value=""/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value=""/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value=""/>
+
+			<!-- Gameplay -->
+			<property name="MoveSpeed" value="0.06"/>
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+
+			<!-- Zombie scale -->
+			<property name="SizeScale" value="1"/>
+
+			<!-- Zombie Loot -->
+			<property name="LootDropProb" value="1"/>
+			<property name="LootDropEntityClass" value="Utility Bag"/>
+
+			<!-- Zombie HP scale -->
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="^healthNormal"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="zombieNavyFeralSeaman" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,allbiome,feral"/>
+			<property name="Censor" value="1,2"/>
+			<property name="SoundAlert" value="zombiemalealert"/>
+			<property name="SoundSense" value="zombiemalesense"/>
+			<property name="SoundHurt" value="zombiemalepain"/>
+			<property name="SoundDeath" value="zombiemaledeath"/>
+			<property name="SoundAttack" value="zombiemaleattack"/>
+			<property name="SoundSleeperSense" value="sleepersense"/>
+			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
+			<property name="Mesh" value="#@modfolder:Resources/DevilsCustomZeds.unity3d?NavyFeralSeaman" />
+			<property name="SoundStepType" value="barehvystep"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="2"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="2735"/>
+			<property name="DeadBodyHitPoints" value="1000"/>
+			<property name="PhysicsBody" value="ZombieCustom002"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="false"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="DanceType" value="1" />
+			<property name="PainResistPerHit" value="100"/>
+			<property name="Dismemberment" value="true"/>
+
+			<!-- Dismemberment -->
+			<property name ="DismemberTag_L_HeadGore" value=""/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value=""/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value=""/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value=""/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value=""/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value=""/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value=""/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value=""/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value=""/>
+
+			<property name="SizeScale" value="1"/>
+
+			<!-- Zombie Loot -->
+			<property name="LootDropProb" value="1"/>
+			<property name="LootDropEntityClass" value="Utility Bag"/>
+
+			<!-- Gameplay zombieNavyFeralSeaman-->
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<!-- Feral -->
+			<property name="PainResistPerHit" value=".7"/>
+			<!-- Feral -->
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="^xpNormalFeral01"/>
+			<!-- Feral -->
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="^healthNormalFeral"/>
+			</effect_group>	
+		</entity_class>
+
+		<entity_class name="zombieNavyRadiatedSeaman" extends="zombieTemplateMale">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,allbiome,feral,radiated"/>
+			<property name="Censor" value="1,2"/>
+			<property name="SoundAlert" value="zombiemalealert"/>
+			<property name="SoundSense" value="zombiemalesense"/>
+			<property name="SoundHurt" value="zombiemalepain"/>
+			<property name="SoundDeath" value="zombiemaledeath"/>
+			<property name="SoundAttack" value="zombiemaleattack"/>
+			<property name="SoundSleeperSense" value="sleepersense"/>
+			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
+			<property name="Mesh" value="#@modfolder:Resources/DevilsCustomZeds.unity3d?NavyRadiatedlSeaman" />
+			<property name="SoundStepType" value="barehvystep"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="2"/>
+			<property name="Mass" value="200"/>
+			<property name="ExperienceGain" value="2735"/>
+			<property name="DeadBodyHitPoints" value="1000"/>
+			<property name="PhysicsBody" value="ZombieCustom002"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="false"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="DanceType" value="1" />
+			<property name="PainResistPerHit" value="100"/>
+			<property name="Dismemberment" value="true"/>
+
+			<!-- Dismemberment -->
+			<property name ="DismemberTag_L_HeadGore" value=""/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value=""/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value=""/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value=""/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value=""/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value=""/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value=""/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value=""/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value=""/>
+
+			<!-- Zombie Loot -->
+			<property name="LootDropProb" value="1"/>
+			<property name="LootDropEntityClass" value="Utility Bag"/>
+			<!-- Zombie HP scale -->
+			<property name="SizeScale" value="1"/>
+			
+			<property name="MoveSpeedAggro" value=".5, 1.35"/>
+			<property name="DismemberMultiplierHead" value=".4"/>
+			<property name="DismemberMultiplierArms" value=".4"/>
+			<property name="DismemberMultiplierLegs" value=".4"/>
+			<!-- Radiated -->
+			<property name="PainResistPerHit" value=".9"/>
+			<!-- Radiated -->
+			<property name="HandItem" value="meleeHandZombieFeral"/>
+			<property name="ExperienceGain" value="^xpStrongRadiated01"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="^healthStrongRadiated"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+		
+		<!-- *** ZOMBIE_VULTURE -->
+		<entity_class name="I Ripper" extends="animalTemplateHostile">
+			<property name="Class" value="EntityVulture"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="EntityFlags" value="animal,zombie"/>
+			<property name="EntityType" value="Zombie"/>
+			<property name="Tags" value="entity,animal,zombie,hostile,vulture"/>
+			<property name="AvatarController" value="AvatarAnimalController"/>
+			<property name="Prefab" value="@:Entities/Animals/Vulture/animalBirdVulturePrefab.prefab"/>
+			<property name="PrefabCombined" value="true"/>
+			<property name="SizeScale" value="1.7"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="PhysicsBody" value="vulture"/>
+			<property name="Mass" value="50"/>
+			<property name="RightHandJointName" value="Jaw"/>
+
+			<property name="AITask-1" value=""/>
+			<property name="AITarget-1" value=""/>
+
+			<property name="SoundRandom" value="vultureroam"/>
+			<property name="SoundAlert" value="vulturealert"/>
+			<property name="SoundHurt" value="vulturepain"/>
+			<property name="SoundDeath" value="vulturedeath"/>
+			<property name="SoundAttack" value="vultureattack"/>
+			<property name="SoundSense" value="vulturesense"/>
+			<property name="SoundGiveUp" value="vulturegiveup"/>
+
+			<!-- Stealth -->
+			<property name="SightRange" value="80"/>
+
+			<!-- Gameplay -->
+			<property name="MoveSpeed" value="1"/>
+			<property name="MoveSpeedAggro" value="2.1, 2.1"/>
+			<!-- Used when player in vehicle -->
+			<property name="MaxTurnSpeed" value="190"/>
+
+			<property name="HandItem" value="meleeHandAnimalZombieVulture"/>
+			<property name="Immunity" value="sickness;disease;wellness"/>
+			<!-- bleeding; -->
+
+			<property name="DismemberMultiplierLegs" value="0"/>
+			<property name="PainResistPerHit" value="-1"/>
+			<!-- no pain -->
+
+			<property name="DeadBodyHitPoints" value="250"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/>
+			<!-- animalZombieVulture -->
+			<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="10"/>
+			<drop event="Harvest" name="foodEgg" tag="butcherHarvest" count="1,2"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="6"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="30"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffRadiationPool"/>
+			</effect_group>
+		</entity_class>
+		
+		<!-- *** ZOMBIE_SOLDIER_MICRO_RADIATED -->
+		<entity_class name="MicroTech" extends="zombieSoldierFeral">
+			<property name="MatColor" value="infernal"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,zombieSoldier"/>
+			<property name="Mesh" value="@:Entities/Zombies/Soldier/ZSoldier.prefab"/>
+			<property name="SizeScale" value=".5"/>
+			
+			<!-- Gameplay zombieSoldierRadiated -->
+			<property name="DismemberMultiplierHead" value=".4"/>
+			<property name="DismemberMultiplierArms" value=".4"/>
+			<property name="DismemberMultiplierLegs" value=".4"/>
+			<!-- Radiated -->
+			<property name="PainResistPerHit" value=".9"/>
+			<!-- Radiated -->
+			<property name="ExperienceGain" value="250"/>
+			<!-- XP grunt radiated -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="100"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1,1.5"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>-->
+				<!-- Feral damage -->
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value=".5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- *** ZOMBIE_DEMOLITION -->
+		<entity_class name="Bastard From Hell" extends="zombieSoldier">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="Tags" value="entity,zombie,walker,boss"/>
+			<property name="Mesh" value="@:Entities/Zombies/Demolition/ZDemolition.prefab"/>
+			<property name="Mass" value="300"/>
+			<property name="SizeScale" value=".75"/>
+			<property name="AITask" value="
+	BreakBlock|
+	DestroyArea|
+	ApproachDistraction|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	"/>
+
+			<property name="SoundRandom" value="demolitionzroam"/>
+			<property name="SoundAlert" value="demolitionzalert"/>
+			<property name="SoundAttack" value="demolitionzattack"/>
+			<property name="SoundHurt" value="demolitionzpain"/>
+			<property name="SoundDeath" value="demolitionzdeath"/>
+			<property name="SoundSense" value="demolitionzsense"/>
+			<property name="SoundFootstepModifier" value="bear_footstep"/>
+
+			<!-- Dismemberment -->
+			<property name ="DismemberTag_L_HeadGore" value="Demolition/Blade/Head;Demolition/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Demolition/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+scale=.85,1,1+atp=true+detach=true+sol=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Demolition/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+scale=.85,1,1+atp=true+detach=true+sol=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Demolition/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true+sol=true+soltarget=leftleg+solscale=0,0,0"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Demolition/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+scale=.95,1,1+atp=true+detach=true+sol=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Demolition/Blade/RightUpperArm" data="type=blade+target=rightarmroll+scale=.8,1,1+atp=true+detach=true+sol=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Demolition/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true+sol=true+soltarget=rightleg+solscale=0,0,0"/>
+			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
+			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
+
+			<!-- Gameplay zombieDemolition -->
+			<property name="HandItem" value="meleeHandZombieDemolition"/>
+			<property name="JumpMaxDistance" value="1, 2"/>
+			<property name="PainResistPerHit" value=".25"/>
+			<property name="ExplosionParticleIndex" value="2"/>
+			<property name="ExplosionRadiusBlocks" value="5"/>
+			<property name="ExplosionRadiusEntities" value="6"/>
+			<property name="ExplosionBlockDamage" value="50"/>
+			<property name="ExplosionEntityDamage" value="8"/>
+			<property name="ExplosionDamageBonusearth" value=".1"/>
+			<property name="StompsSpikes" value="true"/>
+			<property name="ExplodeDelay" value="2"/>
+			<property name="ExplodeHealthThreshold" value="0"/>
+			<!-- Disable Health explosion -->
+			<property name="SoundExplodeWarn" value="demolitionzexplodewarning"/>
+			<property name="SoundTick" value="demolitionz_beep,.5,.9"/>
+
+			<property name="ExperienceGain" value="475"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value=".7"/>
+			<!-- Demo -->
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="250"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+			</effect_group>
+		</entity_class>
+
+		<!-- *** ZOMBIE_SPIDER_FERAL-->
+		<entity_class name="FlippinMonkey" extends="zombieSpider">
+			<property name="MatColor" value="charged"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,zombie,feral,spider"/>
+			<property name="Mesh" value="@:Entities/Zombies/Spider/ZSpiderFeral.prefab"/>
+			<property name="SizeScale" value=".5"/>
+
+			<!-- Gameplay zombieSpiderFeral -->
+			<property name="DismemberMultiplierHead" value=".7"/>
+			<property name="DismemberMultiplierArms" value=".7"/>
+			<property name="DismemberMultiplierLegs" value=".7"/>
+			<!-- Feral -->
+			<property name="PainResistPerHit" value=".7"/>
+			<!-- Feral -->
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/>
+			<!-- Slim Feral -->
+			<property name="JumpMaxDistance" value="11, 13"/>
+			<property name="HandItem" value="meleeHandZombie02Feral"/>
+			<property name="ExperienceGain" value="500"/>
+			<!-- XP Slim Feral -->
+			<property name="LootDropProb" value=".05"/>
+			<!-- Feral -->
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="50"/>
+			</effect_group>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="50"/>
+				<triggered_effect trigger="onSelfFirstSpawn" target="self" action="AddBuff" buff="DK_BOMB"/>
+			</effect_group>
+		</entity_class>
+	</append>
+</configs>

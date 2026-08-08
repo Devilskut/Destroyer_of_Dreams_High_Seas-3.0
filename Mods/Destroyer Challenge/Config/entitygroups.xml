@@ -1,0 +1,661 @@
+<configs>
+
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesAll']">
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Devils_Pup" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='WolfPack']">
+		<e n="Devils_Pup" p="1" />
+		<e n="I Ripper" p="1" />
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='VultureGroup']">
+		<e n="I Ripper" p="1" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='zombieUtilityWorker']">
+		<e n="zombieNavySeaman" p="1" />
+	</append>
+
+	<append xpath="/entitygroups/entitygroup[@name='zombieUtilityWorkerFeral']">
+		<e n="zombieNavyFeralSeaman" p="1" />
+	</append>
+
+	<append xpath="/entitygroups/entitygroup[@name='zombieUtilityWorkerRadiated']">
+		<e n="zombieNavyRadiatedSeaman" p="1" />
+	</append>
+
+	zombieLumberjackRadiated
+	
+	<append xpath="/entitygroups/entitygroup[@name='zombieLumberjackWorker']">
+	<e n="zombieNavyCaptain" p="1" />
+</append>
+
+<append xpath="/entitygroups/entitygroup[@name='zombieLumberjackFeral']">
+	<e n="zombieNavyFeralCaptain" p="1" />
+</append>
+
+<append xpath="/entitygroups/entitygroup[@name='zombieLumberjackRadiated']">
+	<e n="zombieNavyRadiatedCaptain" p="1" />
+</append>
+
+	<append xpath="/entitygroups/entitygroup[@name='zombieScreamer']" >
+		<e n="Bastard From Hell" p="1" />
+	    <e n="zombieNavyCaptain" p="1"/>
+	</append>
+	
+	<!-- *** SLEEPER_HORDE_STAGES -->
+
+	 <append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS1']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+	    <e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS2']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS5']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS8']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS11']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS14']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS18']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS22']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS27']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS31']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS36']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS41']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS46']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS52']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS58']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS64']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS70']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS76']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS82']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS89']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS96']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS103']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS110']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS117']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS125']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS132']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS140']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS148']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS156']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS164']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS172']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS181']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS189']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS198']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS207']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS216']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS225']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS234']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS243']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS252']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS262']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS272']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS281']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS291']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS301']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS311']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS322']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS332']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS343']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS364']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS374']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS385']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS396']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS407']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS419']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS430']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS441']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS453']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS464']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS476']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS488']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS500']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS512']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS524']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS5']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS536']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS548']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS560']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS573']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS585']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS598']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS610']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS623']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS636']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS649']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >
+
+	<append xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS662']" >
+		<e n="Devils_Pup" p="1"/>
+		<e n="FlippinMonkey" p="1"/>
+		<e n="MicroTech" p="1"/>
+		<e n="Colonel Sanders" p="1"/>
+		<e n="zombieNavySeaman" p="1"/>
+	</append >	
+		
+</configs>

@@ -1,0 +1,1070 @@
+﻿<configs>
+
+	<!-- removes non-essential vehicle parts -->
+	<remove xpath="//lootgroup[@name='bicycleParts']//item[@name='vehicleBicycleChassis']"/>
+	<remove xpath="//lootgroup[@name='minibikeParts']//item[@name='vehicleMinibikeChassis']"/>
+	<remove xpath="//lootgroup[@name='minibikeParts']//item[@name='vehicleMinibikeHandlebars']"/>
+	<remove xpath="//lootgroup[@name='motorcycleParts']//item[@name='vehicleMotorcycleChassis']"/>
+	<remove xpath="//lootgroup[@name='motorcycleParts']//item[@name='vehicleMotorcycleHandlebars']"/>
+
+	<!--removes treasure maps from loot -->
+	
+    <remove xpath="//lootgroup[@name='groupFootlocker02']//item[@group='groupTreasureMaps']"/>
+	<remove xpath="//lootgroup[@name='groupMilitaryFootlocker01']//item[@group='groupTreasureMaps']"/>
+	<remove xpath="//lootgroup[@name='groupZpackBoss04']//item[@group='groupTreasureMaps']"/>
+	<remove xpath="//lootgroup[@name='groupZpackStrong04']//item[@group='groupTreasureMaps']"/>
+	<remove xpath="//lootgroup[@name='groupZpackReg04']//item[@group='groupTreasureMaps']"/>
+	<remove xpath="//lootgroup[@name='groupReinforcedChestT3_05']//item[@group='groupTreasureMaps']"/>
+	<remove xpath="//lootgroup[@name='groupHardenedChestT4_07']//item[@group='groupTreasureMaps']"/>
+	<remove xpath="//lootgroup[@name='groupHardenedChestT5_05']//item[@group='groupTreasureMaps']"/> 	
+	
+	<!-- remove seed magazines from loot as they are not required for seed crafting -->
+	
+	<remove xpath="//lootgroup//item[@name='seedSkillMagazine']"></remove>
+	
+	<!-- removes MOST container downgrades/destroy on loot -->
+	
+	<removeattribute xpath="//lootcontainer/@destroy_on_close" />
+	<setattribute xpath="//lootcontainer[@name='junk']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='laundryBasket']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='ammoPileSmall']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='ammoPileMed']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='ammoPileLarge']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='foodPileSmall']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='foodPileMed']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='foodPileLarge']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='medicalPileSmall']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='medicalPileMedium']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='medicalPileLarge']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='liquorPileSmall']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='liquorPileMed']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='liquorPileLarge']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='closet']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='shoes']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='bookPile']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='singleBooks']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='chemPileSmall']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='chemPileMed']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='chemPileLarge']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='collapsedDewCollector']" name="destroy_on_close">empty</setattribute>
+	
+	<!-- removes paper from bookshelf loot -->
+	<remove xpath="//lootgroup[@name='groupBookcase01']//item[@name='resourcePaper']" />
+	<remove xpath="//lootgroup[@name='groupBookcase02']//item[@name='resourcePaper']" />
+	<remove xpath="//lootgroup[@name='groupMailbox01']//item[@name='resourcePaper']" />
+	<remove xpath="//lootgroup[@name='groupMailbox02']//item[@name='resourcePaper']" />
+	<remove xpath="//lootgroup[@name='groupCrackabookShelves01']//item[@name='resourcePaper']" />
+	<remove xpath="//lootgroup[@name='groupFileCabinet01']//item[@name='resourcePaper']" />
+	
+	<!-- changes to cement mixer loot -->
+	
+    <set xpath="/lootcontainers/lootgroup[@name='groupCementMixerLoot']">
+        <item name="resourceRockSmall" count="40,120"/>
+        <item name="resourceClayLump" count="40,120"/>
+        <item name="resourceCrushedSand" count="40,120"/>
+        <item name="resourceOilShale" count="50,100"/>
+	</set>
+
+	
+
+	<!-- zombie specific loot -->
+		
+	<insertafter xpath="//lootcontainers//lootgroup[@name='groupSchematicsAll']">
+
+		<lootgroup name="groupRifleBooks" abundance_type="Magazines">
+			<item name="bookSniperAPAmmo"/>
+			<item name="bookSniperControlledBreathing"/>
+			<item name="bookSniperCripplingShot"/>
+			<item name="bookSniperDamage"/>
+			<item name="bookSniperHeadShot"/>
+			<item name="bookSniperReload"/>
+			<item name="bookSniperHPAmmo"/>
+		</lootgroup>
+		
+		<lootgroup name="groupMachineGunBooks" abundance_type="Magazines">
+			<item name="bookAutoWeaponsDamage"/>
+			<item name="bookAutoWeaponsRagdoll"/>
+			<item name="bookAutoWeaponsMaintenance"/>
+			<item name="bookAutoWeaponsRecoil"/>
+			<item name="bookAutoWeaponsDrumMag"/>
+			<item name="bookAutoWeaponsUncontrolledBurst"/>
+			<item name="bookAutoWeaponsMachineGuns"/>
+		</lootgroup>
+		
+		<lootgroup name="groupShotgunBooks" abundance_type="Magazines">
+			<item name="bookShotgunMessiahBreachingSlugs"/>
+			<item name="bookShotgunMessiahDamage"/>
+			<item name="bookShotgunMessiahLimbShot"/>
+			<item name="bookShotgunMessiahMaintenance"/>
+			<item name="bookShotgunMessiahMagazine"/>
+			<item name="bookShotgunMessiahPartyStarter"/>
+			<item name="bookShotgunMessiahSlugs"/>
+		</lootgroup>
+		
+		<lootgroup name="groupHandgunBooks" abundance_type="Magazines">	
+			<item name="bookPistolPeteAPAmmo"/>
+			<item name="bookPistolPeteDamage"/>
+			<item name="bookPistolPeteHPAmmo"/>
+			<item name="bookPistolPeteMaintenance"/>
+			<item name="bookPistolPeteSteadyHand"/>
+			<item name="bookPistolPeteSwissKnees"/>
+			<item name="bookPistolPeteTakeAim"/>
+		</lootgroup>	
+			
+		<lootgroup name="groupUrbanBooks" abundance_type="Magazines">	
+			<item name="bookUrbanCombatAdrenalineRush"/>
+			<item name="bookUrbanCombatCigar"/>
+			<item name="bookUrbanCombatRoomClearing"/>
+			<item name="bookUrbanCombatJumping"/>
+			<item name="bookUrbanCombatLandMines"/>
+			<item name="bookUrbanCombatLanding"/>
+			<item name="bookUrbanCombatSneaking"/>
+		</lootgroup>
+
+		<lootgroup name="groupArcheryBooks" abundance_type="Magazines">
+			<item name="bookRangersArrowRecovery"/>
+			<item name="bookRangersCripplingShot"/>
+			<item name="bookRangersKnockdown"/>
+			<item name="bookRangersFlamingArrows"/>
+			<item name="bookRangersAPAmmo"/>
+			<item name="bookRangersExplodingBolts"/>
+			<item name="bookRangersForestGuide"/>
+		</lootgroup>	
+			
+		<lootgroup name="groupSpearBooks" abundance_type="Magazines">
+			<item name="bookSpearHunter1Damage"/>
+			<item name="bookSpearHunter2Maintenance"/>
+			<item name="bookSpearHunter3Bleed"/>
+			<item name="bookSpearHunter4KillMove"/>
+			<item name="bookSpearHunter5RapidStrike"/>
+			<item name="bookSpearHunter6PenetratingShaft"/>
+			<item name="bookSpearHunter7QuickStrike"/>
+		</lootgroup>	
+			
+		<lootgroup name="groupHuntingBooks" abundance_type="Magazines">	
+			<item name="bookHuntingJournalBears"/>
+			<item name="bookHuntingJournalCoyotes"/>
+			<item name="bookHuntingJournalDeer"/>
+			<item name="bookHuntingJournalMountainLions"/>
+			<item name="bookHuntingJournalVultures"/>
+			<item name="bookHuntingJournalWolves"/>
+			<item name="bookHuntingJournalSelfDefense"/>
+		</lootgroup>	
+			
+		<lootgroup name="groupMiningBooks" abundance_type="Magazines">
+			<item name="bookArtOfMiningLuckyStrike"/>
+			<item name="bookArtOfMiningDiamondTools"/>
+			<item name="bookArtOfMiningCoffee"/>
+			<item name="bookArtOfMiningBlackStrap"/>
+			<item name="bookArtOfMiningPallets"/>
+			<item name="bookArtOfMiningAvalanche"/>
+			<item name="bookArtOfMiningDamage"/>
+		</lootgroup>	
+			
+		<lootgroup name="groupClubsBooks" abundance_type="Magazines">	
+			<item name="bookBatterUpFoulBalls"/>
+			<item name="bookBatterUpBigHits"/>
+			<item name="bookBatterUpStealingBases"/>
+			<item name="bookBatterUpKnockdown"/>
+			<item name="bookBatterUpSlowPitch"/>
+			<item name="bookBatterUpMaintenance"/>
+			<item name="bookBatterUpMetalChain"/>
+		</lootgroup>	
+			
+		<lootgroup name="groupKnucklesBooks" abundance_type="Magazines">
+			<item name="bookBarBrawling1BasicMoves"/>
+			<item name="bookBarBrawling2DropABomb"/>
+			<item name="bookBarBrawling3KillerInstinct"/>
+			<item name="bookBarBrawling4FinishingMoves"/>
+			<item name="bookBarBrawling5AdrenalineHealing"/>
+			<item name="bookBarBrawling6RageMode"/>
+			<item name="bookBarBrawling7BoozedUp"/>
+		</lootgroup>	
+			
+		<lootgroup name="groupWastelandTreasuresBooks" abundance_type="Magazines">
+			<item name="bookWasteTreasuresAcid"/>
+			<item name="bookWasteTreasuresCloth"/>
+			<item name="bookWasteTreasuresCoffins"/>
+			<item name="bookWasteTreasuresDoors"/>
+			<item name="bookWasteTreasuresHoney"/>
+			<item name="bookWasteTreasuresSinks"/>
+			<item name="bookWasteTreasuresWater"/>
+		</lootgroup>		
+			
+		<lootgroup name="groupFiremanBooks" abundance_type="Magazines">
+			<item name="bookFiremansAlmanacSpeed"/>
+			<item name="bookFiremansAlmanacAxes"/>
+			<item name="bookFiremansAlmanacEquipment"/>
+			<item name="bookFiremansAlmanacPrevention"/>
+			<item name="bookFiremansAlmanacHarvest"/>
+			<item name="bookFiremansAlmanacHeat"/>
+			<item name="bookFiremansAlmanacMolotov"/>
+		</lootgroup>
+			
+		<lootgroup name="groupLooterBooks" abundance_type="Magazines">
+			<item name="bookLuckyLooterAmmunition"/>
+			<item name="bookLuckyLooterBooks"/>
+			<item name="bookLuckyLooterBrass"/>
+			<item name="bookLuckyLooterDukes"/>
+			<item name="bookLuckyLooterFood"/>
+			<item name="bookLuckyLooterLead"/>
+			<item name="bookLuckyLooterMedical"/>
+		</lootgroup>	
+			
+		<lootgroup name="groupMagnumBooks" abundance_type="Magazines">
+			<item name="bookEnforcerAPAmmo"/>
+			<item name="bookEnforcerApparel"/>
+			<item name="bookEnforcerCriminalPursuit"/>
+			<item name="bookEnforcerHPAmmo"/>
+			<item name="bookEnforcerDamage"/>
+			<item name="bookEnforcerIntimidation"/>
+			<item name="bookEnforcerPunks"/>
+		</lootgroup>	
+			
+		<lootgroup name="groupHeistBooks">
+			<item name="bookGreatHeistAdrenalineFall"/>
+			<item name="bookGreatHeistGoldRush"/>
+			<item name="bookGreatHeistClaimed"/>
+			<item name="bookGreatHeistGems"/>
+			<item name="bookGreatHeistMotionDetection"/>
+			<item name="bookGreatHeistSafes"/>
+			<item name="bookGreatHeistSprintSneak"/>
+		</lootgroup>
+
+		<lootgroup name="groupSledgeBooks">
+			<item name="bookSledgeSagaKnockdown"/>
+			<item name="bookSledgeSagaDegradation"/>
+			<item name="bookSledgeSagaCrippledMorale"/>
+			<item name="bookSledgeSagaPulverizingFinishers"/>
+			<item name="bookSledgeSagaSavageReaper"/>
+			<item name="bookSledgeSagaConcussiveStrike"/>
+			<item name="bookSledgeSagaArmorCrusher"/>
+		</lootgroup>
+		
+		<lootgroup name="groupZombieWightLoot" count="all">
+			<item name="drinkJarGrandpasForgettingElixir" prob=".1" force_prob="true" />
+			<item name="questRewardT1SkillMagazineBundle" prob=".1" force_prob="true" />			
+		</lootgroup>
+		
+		<lootgroup name="groupRadZombieWightLoot" count="all">
+			<item name="drinkJarGrandpasForgettingElixir" prob=".2" force_prob="true" />
+			<item name="questRewardT1SkillMagazineBundle" prob=".2" force_prob="true" />			
+		</lootgroup>
+		
+		<lootgroup name="groupSteveandTomLoot" count="all">
+			<item group="groupLooterBooks" prob=".3" force_prob="true" />	
+		</lootgroup>
+		
+		<lootgroup name="groupZombieMaleLoot" count="all">
+			<item name="bowsSkillMagazine" prob=".1" force_prob="true" tags="BowLoot"/>
+			<item name="spearsSkillMagazine" prob=".1" force_prob="true" tags="SpLoot"/>
+			<item group="groupSpearBooks" loot_prob_template="veryLow" force_prob="true" tags="SpLoot"/>
+			<item group="groupArcheryBooks" loot_prob_template="veryLow" force_prob="true" tags="BowLoot"/>			
+		</lootgroup>
+		
+		<lootgroup name="groupRadZombieMaleLoot" count="all">
+			<item name="bowsSkillMagazine" prob=".13" force_prob="true" tags="BowLoot"/>
+			<item name="spearsSkillMagazine" prob=".13" force_prob="true" tags="SpLoot"/>
+			<item group="groupSpearBooks" loot_prob_template="low" force_prob="true" tags="SpLoot"/>
+			<item group="groupArcheryBooks" loot_prob_template="low" force_prob="true" tags="BowLoot"/>			
+		</lootgroup>
+		
+		<lootgroup name="groupZombieFemaleLoot" count="all">
+			<item name="foodSkillMagazine" prob=".1" force_prob="true" tags="FoodLoot"/>
+		</lootgroup>
+		
+		<lootgroup name="groupBusinessmanLoot" count="all">
+			<item name="casinoCoin" count="10,15" prob=".2" force_prob="true"/>
+			<item group="groupHeistBooks" prob=".1" force_prob="true" tags="EXLoot"/>
+		</lootgroup>
+		
+		<lootgroup name="groupRadBusinessmanLoot" count="all">
+			<item name="casinoCoin" count="20,30" prob=".3" force_prob="true"/>
+			<item group="groupHeistBooks" prob=".3" force_prob="true" tags="EXLoot"/>
+		</lootgroup>
+		
+		<lootgroup name="groupPartyGirlLoot" count="all">
+			<item name="oldCash" count="10,15" prob=".2" force_prob="true"/>
+			<item name="casinoCoin" count="20,30" prob=".3" force_prob="true"/>
+			<item group="groupHeistBooks" prob=".3" force_prob="true" tags="EXLoot"/>
+			<item group="groupLooterBooks" prob=".1" force_prob="true" />
+		</lootgroup>
+		
+		<lootgroup name="groupRadPartyGirlLoot" count="all">
+			<item name="oldCash" count="20,30" prob=".3" force_prob="true"/>
+			<item group="groupLooterBooks" prob=".3" force_prob="true" />
+		</lootgroup>
+		
+		<lootgroup name="groupSoldierLoot" count="all">
+			<item name="armorSkillMagazine" prob=".1" force_prob="true" tags="ArLoot"/>
+			<item name="riflesSkillMagazine" prob=".1" force_prob="true" tags="RiLoot"/>
+			<item name="machineGunsSkillMagazine" prob=".1" force_prob="true" tags="MGLoot"/>
+			<item name="explosivesSkillMagazine" prob=".1" force_prob="true" tags="EXLoot"/>
+			<item group="groupRifleBooks" loot_prob_template="veryLow" force_prob="true" tags="RiLoot"/>
+			<item group="groupMachineGunBooks" loot_prob_template="veryLow" force_prob="true" tags="MGLoot"/>
+			<item group="groupHuntingBooks" loot_prob_template="veryLow" force_prob="true" tags="RiLoot"/>
+			<item group="groupUrbanBooks" loot_prob_template="veryLow" force_prob="true" tags="EXLoot"/>
+		</lootgroup>
+		
+		<lootgroup name="groupRadSoldierLoot" count="all">
+			<item name="armorSkillMagazine" prob=".13" force_prob="true" tags="ArLoot"/>
+			<item name="riflesSkillMagazine" prob=".13" force_prob="true" tags="RiLoot"/>
+			<item name="machineGunsSkillMagazine" prob=".13" force_prob="true" tags="MGLoot"/>
+			<item name="explosivesSkillMagazine" prob=".13" force_prob="true" tags="EXLoot"/>
+			<item group="groupRifleBooks" loot_prob_template="low" force_prob="true" tags="RiLoot"/>
+			<item group="groupMachineGunBooks" loot_prob_template="low" force_prob="true" tags="MGLoot"/>
+			<item group="groupHuntingBooks" loot_prob_template="low" force_prob="true" tags="RiLoot"/>
+			<item group="groupUrbanBooks" loot_prob_template="low" force_prob="true" tags="EXLoot"/>
+		</lootgroup>
+		
+		<lootgroup name="groupThugLoot" count="all">
+			<item name="bladesSkillMagazine" prob=".1" force_prob="true" tags="BlLoot"/>
+			<item name="shotgunsSkillMagazine" prob=".1" force_prob="true" tags="SGLoot"/>
+			<item name="knucklesSkillMagazine" prob=".1" force_prob="true" tags="KnLoot"/>
+			<item group="groupShotgunBooks" loot_prob_template="veryLow" force_prob="true" tags="SGLoot"/>
+			<item group="groupKnucklesBooks" loot_prob_template="veryLow" force_prob="true" tags="KnLoot"/>			
+		</lootgroup>
+		
+		<lootgroup name="groupRadThugLoot" count="all">
+			<item name="bladesSkillMagazine" prob=".13" force_prob="true" tags="BlLoot"/>
+			<item name="shotgunsSkillMagazine" prob=".13" force_prob="true" tags="SGLoot"/>
+			<item name="knucklesSkillMagazine" prob=".13" force_prob="true" tags="KnLoot"/>
+			<item name="resourceHeadlight" count="1" prob=".8" force_prob="true"/>
+			<item group="groupShotgunBooks" loot_prob_template="low" force_prob="true" tags="SGLoot"/>
+			<item group="groupKnucklesBooks" loot_prob_template="low" force_prob="true" tags="KnLoot"/>			
+		</lootgroup>
+		
+		<lootgroup name="groupJanitorLoot" count="all">
+			<item name="harvestingToolsSkillMagazine" prob=".1" force_prob="true" tags="HTLoot"/>
+			<item name="repairToolsSkillMagazine" prob=".1" force_prob="true" tags="RTLoot"/>
+			<item name="salvageToolsSkillMagazine" prob=".1" force_prob="true" tags="STLoot"/>
+			<item name="sledgehammersSkillMagazine" prob=".1" force_prob="true" tags="SHLoot"/>
+			<item name="electricianSkillMagazine" prob=".13" force_prob="true" tags="ElLoot"/>
+			<item group="groupSledgeBooks" loot_prob_template="veryLow" force_prob="true" tags="SHLoot"/>
+			<item group="groupWastelandTreasuresBooks" loot_prob_template="veryLow" force_prob="true" tags="STLoot"/>
+			<item group="groupMiningBooks" loot_prob_template="veryLow" force_prob="true" tags="HTLoot"/>
+			<item group="groupFiremanBooks" loot_prob_template="veryLow" force_prob="true" tags="SHLoot"/>
+		</lootgroup>
+		
+		<lootgroup name="groupRadJanitorLoot" count="all">
+			<item name="harvestingToolsSkillMagazine" prob=".13" force_prob="true" tags="HTLoot"/>
+			<item name="repairToolsSkillMagazine" prob=".13" force_prob="true" tags="RTLoot"/>
+			<item name="salvageToolsSkillMagazine" prob=".13" force_prob="true" tags="STLoot"/>
+			<item name="sledgehammersSkillMagazine" prob=".13" force_prob="true" tags="SHLoot"/>
+			<item name="electricianSkillMagazine" prob=".13" force_prob="true" tags="ElLoot"/>
+			<item group="groupSledgeBooks" loot_prob_template="Low" force_prob="true" tags="SHLoot"/>
+			<item group="groupWastelandTreasuresBooks" loot_prob_template="low" force_prob="true" tags="STLoot"/>
+			<item group="groupMiningBooks" loot_prob_template="low" force_prob="true" tags="HTLoot"/>
+			<item group="groupFiremanBooks" loot_prob_template="low" force_prob="true" tags="SHLoot"/>
+		</lootgroup>
+		
+		<lootgroup name="groupFatCopLoot" count="all">
+			<item name="clubsSkillMagazine" prob=".1" force_prob="true" tags="ClLoot"/>
+			<item name="handgunsSkillMagazine" prob=".1" force_prob="true" tags="HGLoot"/>
+			<item name="resourceAcid" count="1" prob=".1" force_prob="true"/>
+			<item group="groupClubsBooks" loot_prob_template="veryLow" force_prob="true" tags="ClLoot"/>
+			<item group="groupHandgunBooks" loot_prob_template="veryLow" force_prob="true" tags="HGLoot"/>
+			<item group="groupMagnumBooks" loot_prob_template="veryLow" force_prob="true" tags="HGLoot"/>
+		</lootgroup>
+		
+		<lootgroup name="groupRadFatCopLoot" count="all">
+			<item name="clubsSkillMagazine" prob=".13" force_prob="true" tags="ClLoot"/>
+			<item name="handgunsSkillMagazine" prob=".13" force_prob="true" tags="HGLoot"/>
+			<item name="resourceAcid" count="1" prob=".13" force_prob="true"/>
+			<item group="groupClubsBooks" loot_prob_template="low" force_prob="true" tags="ClLoot"/>
+			<item group="groupHandgunBooks" loot_prob_template="low" force_prob="true" tags="HGLoot"/>
+			<item group="groupMagnumBooks" loot_prob_template="low" force_prob="true" tags="HGLoot"/>
+		</lootgroup>
+		
+		<lootgroup name="groupBikerLoot" count="all">
+			<item name="vehiclesSkillMagazine" prob="1" force_prob="true" tags="GMLoot"/>
+			<item name="electricianSkillMagazine" prob=".1" force_prob="true" tags="ElLoot"/>
+			<item name="resourceHeadlight" count="1" />
+			<item name="resourceOil" count="4" />
+		</lootgroup>
+		
+		<lootgroup name="groupLabWorkerLoot" count="all">
+			<item name="medicalSkillMagazine" prob=".1" force_prob="true" tags="MedLoot"/>
+			<item name="drugAntibiotics" count="1" prob=".1" force_prob="true" tags="MedLoot"/>
+			<item name="toolBeaker" count="1" prob=".1" force_prob="true"/>
+		</lootgroup>
+		
+		<lootgroup name="groupRadLabWorkerLoot" count="all">
+			<item name="medicalSkillMagazine" prob=".13" force_prob="true" tags="MedLoot"/>
+			<item name="drugAntibiotics" count="1" prob=".1" force_prob="true" tags="MedLoot"/>
+			<item name="toolBeaker" count="1" prob=".2" force_prob="true"/>
+		</lootgroup>
+		
+		<lootgroup name="groupNurseLoot" count="all">
+			<item name="medicalSkillMagazine" prob=".1" force_prob="true" tags="MedLoot"/>
+			<item name="drugAntibiotics" count="1" prob=".1" force_prob="true" tags="MedLoot"/>
+		</lootgroup>
+		
+		<lootgroup name="groupRadNurseLoot" count="all">
+			<item name="medicalSkillMagazine" prob=".13" force_prob="true" tags="MedLoot"/>
+			<item name="drugAntibiotics" count="1" prob=".13" force_prob="true" tags="MedLoot"/>
+		</lootgroup>
+		
+    	<lootgroup name="groupUtilityWorkerLoot" count="all">
+			<item name="workstationSkillMagazine" prob=".13" force_prob="true" tags="WSLoot"/>
+			<item group="groupWastelandTreasuresBooks" loot_prob_template="veryLow" force_prob="true" tags="STLoot"/>
+			<item group="groupMiningBooks" loot_prob_template="veryLow" force_prob="true" tags="HTLoot"/>
+			<item group="groupFiremanBooks" loot_prob_template="veryLow" force_prob="true" tags="SHLoot"/>
+			<item name="electricianSkillMagazine" prob=".1" force_prob="true" tags="ElLoot"/>
+		</lootgroup> 
+		
+        <lootgroup name="groupRadUtilityWorkerLoot" count="all">
+			<item name="workstationSkillMagazine" prob="1" force_prob="true" tags="WSLoot"/>
+			<item group="groupWastelandTreasuresBooks" loot_prob_template="low" force_prob="true" tags="STLoot"/>
+			<item group="groupMiningBooks" loot_prob_template="low" force_prob="true" tags="HTLoot"/>
+			<item group="groupFiremanBooks" loot_prob_template="low" force_prob="true" tags="SHLoot"/>
+			<item name="electricianSkillMagazine" prob=".1" force_prob="true" tags="ElLoot"/>
+		</lootgroup> 
+		
+		<lootgroup name="groupFatZombieLoot" count="all">
+			<item name="resourceAnimalFat" prob=".1" force_prob="true"/>
+			<item group="groupLooterBooks" prob=".2" force_prob="true"/>
+		</lootgroup>
+		
+		<lootgroup name="groupRadFatZombieLoot" count="all">
+			<item name="resourceAnimalFat" prob=".1" force_prob="true"/>
+			<item group="groupLooterBooks" prob=".3" force_prob="true"/>
+		</lootgroup>
+
+		<lootgroup name="groupHazmatLoot" count="all">
+			<item name="resourcePotassiumNitratePowder" count="10,25" prob=".13" force_prob="true"/>
+			<item group="groupFiremanBooks" loot_prob_template="low" force_prob="true" tags="SHLoot"/>
+		</lootgroup>
+
+		<lootgroup name="groupLumberjackLoot" count="all">
+			<item name="harvestingToolsSkillMagazine" prob=".13" force_prob="true" tags="HTLoot"/>
+			<item name="workstationSkillMagazine" prob=".1" force_prob="true" tags="WSLoot"/>
+			<item name="resourceBeeswax" count="1"/>
+			<item name="resourceSnowBall" count="5"/>
+		</lootgroup>
+
+		<lootgroup name="groupInmateLoot" count="all">
+			<item name="resourceLockPick" count="1"/>
+			<item name="harvestingToolsSkillMagazine" prob=".13" force_prob="true" tags="HTLoot"/>
+			<item name="workstationSkillMagazine" prob=".1" force_prob="true" tags="WSLoot"/>
+			<item name="salvageToolsSkillMagazine" prob=".13" force_prob="true" tags="STLoot"/>	
+		</lootgroup>
+		
+		<lootgroup name="groupMutatedLoot" count="all">
+			<item name="resourceAcid" count="1" prob=".1" force_prob="true"/>
+		</lootgroup>
+
+		<lootgroup name="groupChuckLoot" count="all">
+			<item group="groupWastelandTreasuresBooks" loot_prob_template="veryLow" force_prob="true" tags="STLoot"/>
+			<item name="harvestingToolsSkillMagazine" prob=".13" force_prob="true" tags="HTLoot"/>
+			<item name="salvageToolsSkillMagazine" prob=".13" force_prob="true" tags="STLoot"/>
+		</lootgroup>
+
+		<lootgroup name="groupRadChuckLoot" count="all">
+			<item group="groupWastelandTreasuresBooks" loot_prob_template="veryLow" force_prob="true" tags="STLoot"/>
+			<item name="harvestingToolsSkillMagazine" prob=".13" force_prob="true" tags="HTLoot"/>
+			<item name="salvageToolsSkillMagazine" prob=".13" force_prob="true" tags="STLoot"/>
+		</lootgroup>
+
+		<lootgroup name="groupRadRancherLoot" count="all">
+			<item name="harvestingToolsSkillMagazine" prob=".13" force_prob="true" tags="HTLoot"/>
+			<item name="workstationSkillMagazine" prob=".2" force_prob="true" tags="WSLoot"/>
+			<item name="resourceBeeswax" count="1,2" />
+		</lootgroup>	
+	</insertafter>
+
+	
+	<append xpath="/lootcontainers">
+
+		<!-- zombie Bag containers -->
+		
+		<lootcontainer name="Duffle Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+			<item group="groupZombieFemaleLoot"/>
+		</lootcontainer>
+		
+		<lootcontainer name="Duffle Bag 2" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+			<item group="groupZombieMaleLoot"/>
+		</lootcontainer>
+		
+		<lootcontainer name="Medical Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupLabWorkerLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Confiscated Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupInmateLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Biker Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupBikerLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Wight Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupZombieWightLoot"/>
+		</lootcontainer>
+		
+		<lootcontainer name="Mutant Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupMutatedLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Thug Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupThugLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Cop Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupFatCopLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Soldier Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupSoldierLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Party Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupPartyGirlLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Utility Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupRadUtilityWorkerLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Lumber Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupLumberjackLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Big Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupFatZombieLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Rancher Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupRadRancherLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Janitor Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupJanitorLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Chip Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupChuckLoot"/>
+		</lootcontainer>
+
+		<lootcontainer name="Bio Bag" count="1" size="6,1" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" >
+			<item group="groupHazmatLoot"/>
+		</lootcontainer>
+		
+		<!-- zombie loot containers -->
+		
+		<!-- zombieChuck -->
+		<lootcontainer name="zombieChuck" count="0" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupChuckLoot" />
+		</lootcontainer>
+
+		<!-- zombieChuckFeral -->
+		<lootcontainer name="zombieChuckFeral" count="0" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupChuckLoot" />
+		</lootcontainer>
+
+		<!-- zombieChuckRadiated -->
+		<lootcontainer name="zombieChuckRadiated" count="0" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadChuckLoot" />
+		</lootcontainer>
+
+		<!-- zombieRancher -->
+		<lootcontainer name="zombieRancher" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadRancherLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieRancherFeral -->
+		<lootcontainer name="zombieRancherFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadRancherLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieRancherRadiated -->
+		<lootcontainer name="zombieRancherRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadRancherLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- ZombieArlene  -->
+		<lootcontainer name="zombieArlene" count="1" size="6,1"  sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5" force_prob="true">
+			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieArleneFeral -->
+		<lootcontainer name="zombieArleneFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieArleneRadiated -->
+		<lootcontainer name="zombieArleneRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieMarlene -->
+		<lootcontainer name="zombieMarlene" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieMarleneFeral -->
+		<lootcontainer name="zombieMarleneFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieMarleneRadiated -->
+		<lootcontainer name="zombieMarleneRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombiePartygirl -->
+		<lootcontainer name="zombiePartygirl" count="1" size="6,1" sound_open="UseActions/open_corpse" loot_quality_template="qualBaseTemplate" sound_close="UseActions/close_corpse" open_time="1.5">
+			<item group="groupPartyGirlLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombiePartygirlFeral -->
+		<lootcontainer name="zombiePartygirlFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupPartyGirlLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombiePartygirlRadiated -->
+		<lootcontainer name="zombiePartygirlRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupPartyGirlLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieNurse -->
+		<lootcontainer name="zombieNurse" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupNurseLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieNurseFeral -->
+		<lootcontainer name="zombieNurseFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupNurseLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieNurseRadiated -->
+		<lootcontainer name="zombieNurseRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadNurseLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieJoe -->
+		<lootcontainer name="zombieJoe" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieJoeFeral -->
+		<lootcontainer name="zombieJoeFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieJoeRadiated -->
+		<lootcontainer name="zombieJoeRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSteve -->
+		<lootcontainer name="zombieSteve" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSteveFeral -->
+		<lootcontainer name="zombieSteveFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSteveRadiated -->
+		<lootcontainer name="zombieSteveRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieTomClark -->
+		<lootcontainer name="zombieTomClark" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieTomClarkFeral -->
+		<lootcontainer name="zombieTomClarkFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieTomClarkRadiated -->
+		<lootcontainer name="zombieTomClarkRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieBusinessMan -->
+		<lootcontainer name="zombieBusinessMan" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupBusinessmanLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieBusinessManFeral -->
+		<lootcontainer name="zombieBusinessManFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupBusinessmanLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieBusinessManRadiated -->
+		<lootcontainer name="zombieBusinessManRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadBusinessmanLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieBurnt -->
+		<lootcontainer name="zombieBurnt" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieBurntFeral -->
+		<lootcontainer name="zombieBurntFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieBurntRadiated -->
+		<lootcontainer name="zombieBurntRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSpider -->
+		<lootcontainer name="zombieSpider" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSpiderFeral -->
+		<lootcontainer name="zombieSpiderFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSpiderRadiated -->
+		<lootcontainer name="zombieSpiderRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- Zombie Boe -->
+		<lootcontainer name="ZombieBoe" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieBoeFeral -->
+		<lootcontainer name="zombieBoeFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieBoeRadiated -->
+		<lootcontainer name="zombieBoeRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieMaleHazmat -->
+		<lootcontainer name="zombieMaleHazmat" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupHazmatLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieMaleHazmatFeral -->
+		<lootcontainer name="zombieMaleHazmatFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupHazmatLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieMaleHazmatRadiated -->
+		<lootcontainer name="zombieMaleHazmatRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupHazmatLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieJanitor -->
+		<lootcontainer name="zombieJanitor" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupJanitorLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieJanitorFeral -->
+		<lootcontainer name="zombieJanitorFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupJanitorLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieJanitorRadiated -->
+		<lootcontainer name="zombieJanitorRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadJanitorLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- *** ZOMBIE_INMATE -->
+		<lootcontainer name="zombieInmate" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadJanitorLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- *** ZOMBIE_INMATE_FERAL -->
+		<lootcontainer name="zombieInmateFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupInmateLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- *** ZOMBIE_INMATE_RADIATED -->
+		<lootcontainer name="zombieInmateRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupInmateLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieMoe -->
+		<lootcontainer name="zombieMoe" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieMoeFeral -->
+		<lootcontainer name="zombieMoeFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieMoeRadiated -->
+		<lootcontainer name="zombieMoeRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieLab -->
+		<lootcontainer name="zombieLab" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupLabWorkerLoot"/>
+		</lootcontainer>
+
+		<!-- zombieLabFeral -->
+		<lootcontainer name="zombieLabFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupLabWorkerLoot"/>
+		</lootcontainer>
+
+		<!-- zombieLabRadiated -->
+		<lootcontainer name="zombieLabRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadLabWorkerLoot"/>
+		</lootcontainer>
+
+		<!-- zombieDarlene -->
+		<lootcontainer name="zombieDarlene" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieDarleneFeral -->
+		<lootcontainer name="zombieDarleneFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieDarleneRadiated -->
+		<lootcontainer name="zombieDarleneRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieYo -->
+		<lootcontainer name="zombieYo" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieYoFeral -->
+		<lootcontainer name="zombieYoFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieYoRadiated -->
+		<lootcontainer name="zombieYoRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieUtilityWorker -->
+		<lootcontainer name="zombieUtilityWorker" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupUtilityWorkerLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieUtilityWorkerFeral -->
+		<lootcontainer name="zombieUtilityWorkerFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupUtilityWorkerLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieUtilityWorkerRadiated -->
+		<lootcontainer name="zombieUtilityWorkerRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadUtilityWorkerLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieUtilityWorkerInfernal -->
+		<lootcontainer name="zombieUtilityWorkerInfernal" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadUtilityWorkerLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieUtilityWorkerCharged -->
+		<lootcontainer name="zombieUtilityWorkerCharged" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadUtilityWorkerLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieBiker -->
+		<lootcontainer name="zombieBiker" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupBikerLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieBikerFeral -->
+		<lootcontainer name="zombieBikerFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupBikerLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieBikerRadiated -->
+		<lootcontainer name="zombieBikerRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupBikerLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieLumberjack -->
+		<lootcontainer name="zombieLumberjack" count="1" size="8,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupLumberjackLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieLumberjackFeral -->
+		<lootcontainer name="zombieLumberjackFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupLumberjackLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieLumberjackRadiated -->
+		<lootcontainer name="zombieLumberjackRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupLumberjackLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieFemaleFat -->
+		<lootcontainer name="zombieFemaleFat" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupFatZombieLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieFemaleFatFeral -->
+		<lootcontainer name="zombieFemaleFatFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupFatZombieLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieFemaleFatRadiated -->
+		<lootcontainer name="zombieFemaleFatRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadFatZombieLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieFatHawaiian -->
+		<lootcontainer name="zombieFatHawaiian" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupFatZombieLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieFatHawaiianFeral -->
+		<lootcontainer name="zombieFatHawaiianFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupFatZombieLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieFatHawaiianRadiated -->
+		<lootcontainer name="zombieFatHawaiianRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadFatZombieLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- *** ZOMBIE_BOWLER -->
+		<lootcontainer name="zombieBowler" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupFatZombieLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- *** ZOMBIE_BOWLER_FERAL -->
+		<lootcontainer name="zombieBowlerFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupFatZombieLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- *** ZOMBIE_BOWLER_RADIATED -->
+		<lootcontainer name="zombieBowlerRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadFatZombieLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieFatCop -->
+		<lootcontainer name="zombieFatCop" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupFatCopLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieFatCopFeral -->
+		<lootcontainer name="zombieFatCopFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupFatCopLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieFatCopRadiated -->
+		<lootcontainer name="zombieFatCopRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadFatCopLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSkateboarder -->
+		<lootcontainer name="zombieSkateboarder" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupThugLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSkateboarderFeral -->
+		<lootcontainer name="zombieSkateboarderFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupThugLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSkateboarderRadiated -->
+		<lootcontainer name="zombieSkateboarderRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadThugLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSoldier -->
+		<lootcontainer name="zombieSoldier" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupSoldierLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSoldierFeral -->
+		<lootcontainer name="zombieSoldierFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupSoldierLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSoldierRadiated -->
+		<lootcontainer name="zombieSoldierRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadSoldierLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieWightFeral -->
+		<lootcontainer name="zombieWightFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieWightLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieWightRadiated -->
+		<lootcontainer name="zombieWightRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupRadZombieWightLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieScreamer -->
+		<lootcontainer name="zombieScreamer" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieScreamerFeral -->
+		<lootcontainer name="zombieScreamerFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieScreamerRadiated -->
+		<lootcontainer name="zombieScreamerRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieFemaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieMutated -->
+		<lootcontainer name="zombieMutated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupMutatedLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieMutatedFeral -->
+		<lootcontainer name="zombieMutatedFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupMutatedLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieMutatedRadiated -->
+		<lootcontainer name="zombieMutatedRadiated" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupMutatedLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieDemolition  -->
+		<lootcontainer name="zombieDemolition" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupSoldierLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSteveCrawler -->
+		<lootcontainer name="zombieSteveCrawler" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- zombieSteveCrawlerFeral -->
+		<lootcontainer name="zombieSteveCrawlerFeral" count="1" size="6,1" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate" open_time="1.5">
+			<item group="groupZombieMaleLoot" count="1" prob="100"/>
+		</lootcontainer>
+
+		<!-- Oil Barrels -->
+		<lootcontainer name="OilBarrel1" count="1" size="2,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+			<item name="resourceOil" count="0,1"/>
+		</lootcontainer>
+		<lootcontainer name="OilBarrel2" count="1" size="2,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+			<item name="resourceOil" count="0,1"/>
+		</lootcontainer>
+		<lootcontainer name="waterBarrel3" count="1" size="2,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+			<item name="drinkJarRiverWater" count="1,3" loot_prob_template="med"/>
+			<item name="drinkJarBoiledWater" count="1,2" loot_prob_template="med"/>
+		</lootcontainer>
+		<lootcontainer name="801" count="1" size="5,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceOilShale" count="50,200"/>
+		</lootcontainer>
+	</append>	
+</configs>

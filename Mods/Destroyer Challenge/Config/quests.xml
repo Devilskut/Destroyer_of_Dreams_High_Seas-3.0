@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+	<set xpath="/quests/@quests_per_tier">1</set>
+	
+<!-- Begin Removal of quests that don't fit in to this pack / quests that are placed outside the main POI for this pack -->
+
+<!-- BEGIN removal of ALL vanillia quests -->
+	<remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']"/>
+
+	<remove xpath="/quests/quest[@id='challengegroup_reward_homesteading']"/>
+	<remove xpath="/quests/quest[@template='challengegroup_reward_homesteading']"/>
+
+	<remove xpath="/quests/quest_list/quest[@id='intro_buried_supplies']" />
+
+	<remove xpath="/quests/quest[contains(@id,'_fetch') or
+									 contains(@id,'_clear') or
+									 contains(@id,'supplies') or
+									 contains(@id,'_restore_power') or
+									 contains(@id,'_test_turnin') or
+									 contains(@id,'_reward_quest_')
+									 ]/reward[@type='LootItem']"/>
+	<remove xpath="/quests/quest[contains(@id,'_fetch') or
+									contains(@id,'_clear') or
+									contains(@id,'supplies') or
+									contains(@id,'_restore_power') or
+									contains(@id,'_test_turnin') or
+									contains(@id,'_reward_quest_')
+									]/reward[@type='Item']"/>
+	
+	<!-- END removal of ALL vanillia quests -->
+	<!-- End Removal of quests that don't fit in to this pack / quests that are placed outside the main POI for this pack -->
+	
+	<append xpath="/quests">
+		
+		<!-- Initial quest that kicks off the challenge -->
+		
+	<quest id="quest_whiteRiverCitizen1">
+		<property name="name_key" value="challenge_StartingDestroyer"/>
+		<property name="subtitle_key" value="challenge_StartingDestroyer_subtitle"/>
+		<property name="description_key" value="challenge_StartingDestroyer_description"/>
+		<property name="group_name_key" value="challenge_StartingDestroyer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="false"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="challenge_StartingDestroyer_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+		<action type="TrackQuest"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_white_river_completion"/>
+
+		<property name="reward_choices_count" value="5"/>
+
+		<action type="ShowMessageWindow">
+			<property name="title" value="Welcome"/>
+			<property name="message" value="tutorialTipQuest01"/>
+			<property name="delay" value="2"/>
+		</action>
+
+		<objective type="Goto" id="trader" value="5" phase="2">
+			<property name="biome_filter_type" value="any" />
+			<property name="Zoning" value="any" />
+			<property name="completion_distance" value="50" />
+			<property name="nav_object" value="go_to_trader" />
+			<property name="nav_object" value="quest"/>
+		</objective>
+		
+		<reward type="LootItem" id="groupQuestForge" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestFarmPlotsT1" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestAmmoCraftingBundle" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestWoodShapes" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestWrench" ischosen="true" value="1"/>
+		<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestT1Books" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestT1Traps" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestT1MeleeMods" ischosen="true" value="2"/>
+		<reward type="LootItem" id="groupQuestT1RangedMods" ischosen="true" value="2"/>
+			
+		<reward type="Quest" id="quest_DestroyerChallenge" />
+	</quest>
+
+		<quest id="quest_DestroyerChallenge">
+			<property name="name_key" value="quest_DestroyerChallenge" param1="name"/>
+			<property name="subtitle_key" value="quest_DestroyerChallenge_subtitle"/>
+			<property name="description_key" value="quest_DestroyerChallenge_description"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty_tier" value="1" param1="difficulty"/>
+			<property name="offer_key" value="quest_tier1_fetch_offer" param1="offer"/>
+			<property name="statement_key" value="quest_fetch_statement"/>
+			<property name="response_key" value="quest_fetch_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="filter_tags" value="poi" param1="filter_tags"/>
+			<property name="shareable" value="true"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_fetch_completion"/>
+
+			<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
+				<property name="completion_distance" value="50" />
+				<property name="phase" value="1" />
+				<property name="PrefabName" value="Toxic_Docks" />
+				<property name="nav_object" value="quest" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+				<property name="rally_marker_type" value="questRallyMarkerFetch"/>
+			</objective>
+
+			<objective type="FetchFromContainer">
+				<property name="phase" value="3"/>
+				<property name="quest_item_ID" value="1"/>
+				<property name="item_count" value="1"/>
+				<property name="default_container" value="cntFetchQuestSatchel"/>
+				<property name="nav_object" value="fetch_container"/>
+			</objective>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+
+			<action type="UnlockPOI" >
+				<property name="phase" value="4"/>
+			</action>
+
+				<objective type="ReturnToNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective> 
+
+			<reward type="Exp" value="5060"/>
+			<reward type="Quest" id="quest_DestroyerChallenge08" />
+
+     		<reward type="LootItem" id="groupQuestFood,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestFood,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestFood,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestFood,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMedical,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestResourcesT0" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestResourcesT0,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/> 
+		</quest>
+		
+			<quest id="quest_DestroyerChallenge08">
+				<property name="name_key" value="quest_DestroyerChallenge08"/>
+				<property name="subtitle_key" value="quest_DestroyerChallenge08_subtitle"/>
+				<property name="description_key" value="quest_DestroyerChallenge08_description"/>
+				<property name="repeatable" value="false"/>
+				<property name="category_key" value="quest" />
+				<property name="offer_key" value="quest_DestroyerChallenge08_offer" />
+				<property name="difficulty" value="medium" />
+				<property name="shareable" value="true"/>
+
+				<property name="login_rally_reset" value="true"/>
+
+				<action type="TrackQuest"/>
+
+				<action type="ShowMessageWindow">
+					<property name="title" value="[FFFF00]FORT 666 Night OPS[-]"/>
+					<property name="message" value="Our [FFFF00]FORT 666[-] has come under [FF0000]ASSAULT[-]! This abandoned air strip is FULL of some of the nastiest zombies! NOW, grab all the [FFFF00]AMMO AND PROVISIONS[-] you can gather and get this bird [FF0000]IN THE AIR![-] Should you fail this mission you may craft another by using [FFFF00]Dukes."/>
+					<property name="delay" value="2"/>
+				</action>
+
+				<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
+					<property name="completion_distance" value="50" />
+					<property name="phase" value="1" />
+					<property name="PrefabName" value="CF_army_camp_666" />
+					<property name="nav_object" value="quest" />
+				</objective>
+				<objective type="RallyPoint">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="rally"/>
+					<property name="allowed_start_hour" value="22"/>
+					<property name="allowed_end_hour" value="1"/>
+					<property name="rally_marker_type" value="questRallyMarkerRestorePower"/>
+				</objective>
+				<objective type="ClearSleepers">
+					<property name="phase" value="3"/>
+					<property name="nav_object" value="sleeper_volume"/>
+				</objective>
+				<objective type="POIBlockActivate" >
+					<property name="phase" value="3"/>
+					<property name="block_index" value="QuestRestorePower"/>
+					<property name="nav_object" value="restore_power"/>
+					<property name="complete_event" value="quest_poi_lights_on"/>
+				</objective>
+				<objective type="POIStayWithin">
+					<property name="phase" value="3"/>
+					<property name="radius" value="25"/>
+				</objective>
+				<action type="UnlockPOI" >
+					<property name="phase" value="4"/>
+				</action>
+
+				<reward type="Exp" value="500"/>
+				<reward type="Quest" id="quest_DestroyerChallenge09">
+				</reward>
+			</quest>	
+		
+				<quest id="quest_DestroyerChallenge09">
+				<property name="name_key" value="quest_DestroyerChallenge09"/>
+				<property name="subtitle_key" value="quest_DestroyerChallenge09_subtitle"/>
+				<property name="description_key" value="quest_DestroyerChallenge09_description"/>
+				<property name="icon" value="ui_game_symbol_gyrocopter"/>
+				<property name="repeatable" value="false"/>
+				<property name="category_key" value="quest"/>
+				<property name="offer_key" value="quest_DestroyerChallenge09_offer"/>
+				<property name="difficulty" value="medium"/>
+				<property name="extra_tags" value="infested" param1="extra_tags" />
+				<property name="shareable" value="true"/>
+				<property name="gamestage_mod" value=".6" param1="gamestage_mod" />
+				<property name="gamestage_bonus" value="30" param1="gamestage_bonus" />
+
+				<action type="TrackQuest"/>
+
+				<action type="ShowMessageWindow">
+					<property name="title" value="[FFFF00]TRADER[-]"/>
+					<property name="message" value="Our [FFFF00]TRADERS[-] need help! They are trapped on an [FFFF00]OIL PLATFORM[-]! Let's grab some more [FFFF00]AMMO AND PROVISIONS[-] and get this bird back [FF0000]IN THE AIR![-] "/>
+					<property name="delay" value="2"/>
+				</action>
+					
+				<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
+					<property name="phase" value="1" />
+					<property name="PrefabName" value="trader_hub_main_01" />
+					<property name="nav_object" value="quest" />
+				</objective>
+
+				<objective type="RallyPoint">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="rally"/>
+					<property name="rally_marker_type" value="questRallyMarkerRestorePower" />
+				</objective>
+
+				<objective type="ClearSleepers">
+					<property name="phase" value="3"/>
+					<property name="nav_object" value="sleeper_volume"/>
+				</objective>
+
+				<objective type="POIBlockActivate" >
+					<property name="phase" value="3"/>
+					<property name="block_index" value="QuestRestorePower"/>
+					<property name="nav_object" value="restore_power"/>
+					<property name="complete_event" value="quest_poi_lights_on"/>
+				</objective>
+
+				<objective type="POIStayWithin">
+					<property name="phase" value="3"/>
+					<property name="radius" value="25"/>
+				</objective>
+
+				<action type="UnlockPOI" >
+					<property name="phase" value="4"/>
+				</action>
+
+				<objective type="Goto" id="trader" value="7" phase="4">
+					<property name="biome_filter_type" value="any"/>
+					<property name="Zoning" value="any"/>
+					<property name="nav_object" value="go_to_trader"/>
+				</objective>
+
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				
+				<reward type="Exp" value="500"/>
+				<reward type="Quest" id="Completion"/>
+			</quest>
+
+		<quest id="Completion">
+			<property name="name_key" value="Challenge Completion"/>
+			<property name="subtitle_key" value="Challenge Completion_subtitle"/>
+			<property name="description_key" value="Challenge Completion_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="category" value="Congratulations!"/>
+			<property name="difficulty" value="easy"/>
+			<property name="shareable" value="false"/>
+
+
+			<action type="ShowMessageWindow">
+				<property name="title" value="Congrats"/>
+				<property name="message" value="Congrats_message"/>
+				<property name="delay" value="2"/>
+			</action>
+
+		</quest>
+
+		    <!-- END Destroyer Challenge main quest line -->
+
+	</append>	
+</configs>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="0" />
+  <property name="ShowQuestClearCount" value="1" />
+  <property name="TraderArea" value="False" />
+  <property name="PrefabSize" value="14, 45, 203" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property name="Zoning" value="none" />
+  <property name="SleeperVolumeSize" value="13, 3, 28#13, 3, 24#13, 10, 20#13, 9, 15#14, 3, 71#14, 3, 38" />
+  <property name="SleeperVolumeStart" value="1, 22, 13#1, 22, 41#1, 22, 136#1, 32, 142#0, 21, 65#0, 21, 156" />
+  <property name="SleeperVolumeGroupId" value="0,0,0,0,0,0" />
+  <property name="SleeperVolumeGroup" value="zombieScreamer,3,4,zombieScreamer,3,4,GroupGenericZombie,8,9,GroupGenericZombie,5,6,zombieScreamer,7,8,zombieScreamer,5,6" />
+  <property name="SleeperIsLootVolume" value="False,False,False,False,False,False" />
+  <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False" />
+  <property name="SleeperVolumeFlags" value="0,0,0,0,0,0" />
+  <property name="SleeperVolumeTriggeredBy" value=" # # # # # " />
+  <property name="YOffset" value="-20" />
+  <property class="IndexedBlockOffsets">
+    <property class="challenge_polymers">
+      <property name="0" value="11, 22, 197" />
+      <property name="1" value="11, 22, 198" />
+      <property name="2" value="11, 23, 198" />
+    </property>
+    <property class="challenge_pallet">
+      <property name="0" value="6, 22, 186" />
+    </property>
+    <property class="TraderOnOff">
+      <property name="0" value="12, 9, 180" />
+    </property>
+    <property class="challenge_sinks">
+      <property name="0" value="5, 23, 147" />
+    </property>
+    <property class="POILight">
+      <property name="0" value="10, 23, 150" />
+      <property name="1" value="8, 30, 152" />
+    </property>
+  </property>
+  <property class="Stats">
+    <property name="LightsVolume" value="4547.979" />
+    <property name="TotalVertices" value="271362" />
+    <property name="TotalTriangles" value="169814" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="84075" />
+      <property name="Triangles" value="36018" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="163833" />
+      <property name="Triangles" value="108164" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="10752" />
+      <property name="Triangles" value="5376" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="184" />
+      <property name="Triangles" value="92" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="192" />
+      <property name="Triangles" value="96" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="12326" />
+      <property name="Triangles" value="20068" />
+    </property>
+  </property>
+</prefab>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configs>
+<append xpath="/items">
+	<item name="cucumber">
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Tags" value="Gurke"/>
+		<property name="CustomIcon" value="Gurke"/>
+		<property name="HoldType" value="31"/>
+		<property name="DisplayType" value="food"/>
+		<property name="Meshfile" value="#@modfolder:Resources/parcelPrefab.prefab"/>
+		<property name="DropMeshfile" value="#@modfolder:Resources/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="Stacknumber" value="30000"/>
+		<!-- STK food -->
+		<property name="EconomicValue" value="1"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Use_time" value="..."/>
+			<property name="Sound_start" value="player_eating"/>
+		</property>
+		<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+		<effect_group tiered="false" name="Food Tier 0">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+		</effect_group>
+	</item>
+</append>
+</configs>
