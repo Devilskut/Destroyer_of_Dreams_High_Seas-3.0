@@ -100,6 +100,12 @@
 			<property name="completiontype" value="TurnIn"/>
 			<property name="completion_key" value="quest_fetch_completion"/>
 
+			<action type="ShowMessageWindow">
+				<property name="title" value="[FFFF00]STORAGE BOXES[-]"/>
+				<property name="message" value="tutorialTipQuest03"/>
+				<property name="delay" value="2"/>
+			</action>
+			
 			<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
 				<property name="completion_distance" value="50" />
 				<property name="phase" value="1" />

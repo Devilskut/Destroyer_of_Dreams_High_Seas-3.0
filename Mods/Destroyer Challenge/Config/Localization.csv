@@ -3,6 +3,10 @@ Key,English
 goGameWorld,[FF4F00]Select 'Destroyer  (biome)'[-]
 goLootRespawnDays,Loot Respawn-[FF4F00]Select 7 Days '[-]
 
+noteDuke01,"Note from Devilskut"
+
+noteDuke01Desc,"Congratulations! \nThe ship's still afloat. Your odds aren't. Keep going. I could use the entertainment.\nSee you soon,\nDevilskut \n\n Warning: Complaints must be submitted after surviving."
+
 adminQuestTicketDesc,"Read, accept, and complete to receive next quest.\n\nUsed for quest progression."
 
 resourcePaper,"Classified Document" 
@@ -519,7 +523,9 @@ dishongTowerBundleDesc,Starter items for the Destroyer challenge.,,
 
 Welcome,"Started The Destroyer Challenge"
 
-tutorialTipQuest01,"Welcome aboard the Destroyer, Master Chief! \nThe Oil Tanker  was returned to the docks after your last rescue mission from certain doom on the Aircraft Carrier , but it seems the zombies from the Destroyer reinfested the Oil Tanker. Now grab your supplies, eliminate the zombie threat, and build an UH-60 helicopter to seek refuge at a nearby [ff7f27]OIL RIG[-].  \n\nRULES: \n1. The ground around the Docks is [ff7f27]SPICY[-] and may [ff7f27]NOT[-] be used to support any structures, or to grow any crops, unless you can do this [ff7f27]WITHOUT[-] touching it. \n2. All default game settings, unless you are a seasoned gamer.\n3. You must survive until you are able to build a UH-60 and fly off the Destroyer to complete your [ff7f27]Final Mission [-].\n\nIf  [ff7f27]ANYONE[-] dies the mission is over [cd5c5c]PERMADEATH CHALLENGE[-] [ff7f27] however[-], in a large group this is not practical so you may now come back [FFFF00]injured[-] to complete your mission. This is for bragging rights!"
+tutorialTipQuest01,"Welcome aboard the Destroyer, Master Chief! \nThe Oil Tanker  was returned to the docks after your last rescue mission from certain doom on the Aircraft Carrier, but it seems the zombies from the Destroyer reinfested the Oil Tanker. Now grab your supplies, eliminate the zombie threat, and build an UH-60 helicopter to seek refuge at a nearby [ff7f27]OIL RIG[-].  \n\nRULES: \n1. The ground around the Docks is [ff7f27]SPICY[-] and may [ff7f27]NOT[-] be used to support any structures, or to grow any crops, unless you can do this [ff7f27]WITHOUT[-] touching it. \n2. All default game settings, unless you are a seasoned gamer.\n3. You must survive until you are able to build a UH-60 and fly off the Destroyer to complete your [ff7f27]Final Mission [-].\n\nIf [ff7f27]ANYONE[-] dies the mission is over [cd5c5c]PERMADEATH CHALLENGE[-] [ff7f27] however[-], in a large group this is not practical so you may now come back [FFFF00]injured[-] to complete your mission. This is for bragging rights!"
+
+tutorialTipQuest03,"[FFFF00]STORAGE BOXES[-] and [FFFF00]PLAYER BLOCKS[-] will disappear from the [FFFF00]TOXIC DOCKS [-]once the mission is started.\nYou may want to pick up those [FFFF00] BLOCKS[-] so you can have a way back to the Destroyer."/>
 
 challenge_StartingDestroyer,"Welcome aboard Master Chief!"
 challenge_StartingDestroyer_subtitle,"Clear some zombies"
@@ -527,7 +533,7 @@ challenge_StartingDestroyer_description,"Grab your gear and Let's Go clear our w
 
 quest_DestroyerChallenge,"Find Blueprint" 
 quest_DestroyerChallenge_subtitle,"Find the lost blueprint."
-quest_DestroyerChallenge_description,"Since you already know your orders lets get working on finding that blueprint. I think Bob had a few too many and left it over at Jimbo's Beer and Wine. Use anything you can to reach Jimbo's  and careful the ground is spicy!"
+quest_DestroyerChallenge_description,"Since you already know your orders lets get working on finding that blueprint. I think Bob had a few too many and left it over at Jimbo's Beer and Wine. Use anything you can to reach Jimbo's and careful the ground is spicy! \nPlayer blocks will be lost when you start your mission on the Toxic Docks so you might want to pick them up.MGMT"
 quest_DestroyerChallenge_offer,"Since you already know your orders lets get working on finding that blueprint. "
 
 quest_DestroyerChallenge02,"Gather UH-60 Parts 1/3"

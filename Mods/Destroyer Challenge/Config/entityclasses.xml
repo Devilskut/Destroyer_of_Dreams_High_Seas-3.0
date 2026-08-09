@@ -1411,7 +1411,7 @@
 	BreakBlock|
 	DestroyArea|
 	ApproachDistraction|
-	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal,0,EntityAnimal|
 	ApproachSpot|
 	Look|
 	Wander|
@@ -1423,29 +1423,33 @@
 			<property name="SoundHurt" value="demolitionzpain"/>
 			<property name="SoundDeath" value="demolitionzdeath"/>
 			<property name="SoundSense" value="demolitionzsense"/>
-			<property name="SoundFootstepModifier" value="bear_footstep"/>
+			<property name="SoundStepType" value="heavystep"/>
 
 			<!-- Dismemberment -->
-			<property name ="DismemberTag_L_HeadGore" value="Demolition/Blade/Head;Demolition/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
-			<property name ="DismemberTag_L_LeftLowerArmGore" value="Demolition/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+scale=.85,1,1+atp=true+detach=true+sol=true"/>
-			<property name ="DismemberTag_L_LeftUpperArmGore" value="Demolition/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+scale=.85,1,1+atp=true+detach=true+sol=true"/>
-			<property name ="DismemberTag_L_LeftUpperLegGore" value="Demolition/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true+sol=true+soltarget=leftleg+solscale=0,0,0"/>
-			<property name ="DismemberTag_L_RightLowerArmGore" value="Demolition/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+scale=.95,1,1+atp=true+detach=true+sol=true"/>
-			<property name ="DismemberTag_L_RightUpperArmGore" value="Demolition/Blade/RightUpperArm" data="type=blade+target=rightarmroll+scale=.8,1,1+atp=true+detach=true+sol=true"/>
-			<property name ="DismemberTag_L_RightUpperLegGore" value="Demolition/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true+sol=true+soltarget=rightleg+solscale=0,0,0"/>
+			<property name ="DismemberTag_L_HeadGore" value="Demolition/Dismemberment/Blade/Head;Demolition/Dismemberment/Blunt/Head" data="type=blade+target=neck+atp=true+detach=true;type=blunt+target=neck+atp=true"/>
+			<property name ="DismemberTag_L_LeftLowerArmGore" value="Demolition/Dismemberment/Blade/LeftLowerArm" data="type=blade+target=leftforearmroll+scale=.85,1,1+atp=true+detach=true+sol=true"/>
+			<property name ="DismemberTag_L_LeftUpperArmGore" value="Demolition/Dismemberment/Blade/LeftUpperArm" data="type=blade+target=leftarmroll+scale=.85,1,1+atp=true+detach=true+sol=true"/>
+			<property name ="DismemberTag_L_LeftUpperLegGore" value="Demolition/Dismemberment/Blade/LeftUpperLeg" data="type=blade+target=leftupleg+detach=true+mask=true+sol=true+soltarget=leftleg+solscale=0,0,0"/>
+			<property name ="DismemberTag_L_RightLowerArmGore" value="Demolition/Dismemberment/Blade/RightLowerArm" data="type=blade+target=rightforearmroll+scale=.95,1,1+atp=true+detach=true+sol=true"/>
+			<property name ="DismemberTag_L_RightUpperArmGore" value="Demolition/Dismemberment/Blade/RightUpperArm" data="type=blade+target=rightarmroll+scale=.8,1,1+atp=true+detach=true+sol=true"/>
+			<property name ="DismemberTag_L_RightUpperLegGore" value="Demolition/Dismemberment/Blade/RightUpperLeg" data="type=blade+target=rightupleg+detach=true+mask=true+sol=true+soltarget=rightleg+solscale=0,0,0"/>
 			<property name ="DismemberTag_L_LeftLowerLegGore" value="linked" data="DismemberTag_L_LeftUpperLegGore"/>
 			<property name ="DismemberTag_L_RightLowerLegGore" value="linked" data="DismemberTag_L_RightUpperLegGore"/>
 
 			<!-- Gameplay zombieDemolition -->
 			<property name="HandItem" value="meleeHandZombieDemolition"/>
 			<property name="JumpMaxDistance" value="1, 2"/>
-			<property name="PainResistPerHit" value=".25"/>
-			<property name="ExplosionParticleIndex" value="2"/>
-			<property name="ExplosionRadiusBlocks" value="5"/>
-			<property name="ExplosionRadiusEntities" value="6"/>
-			<property name="ExplosionBlockDamage" value="50"/>
-			<property name="ExplosionEntityDamage" value="8"/>
-			<property name="ExplosionDamageBonusearth" value=".1"/>
+			<property name="PainResistPerHit" value=".5"/>
+			<property class="Explosion">
+				<property name="ParticleIndex" value="2"/>
+				<property name="RadiusBlocks" value="3"/>
+				<property name="RadiusEntities" value="3"/>
+				<property name="BlockDamage" value="50"/>
+				<property name="EntityDamage" value="8"/>
+				<property class="DamageBonus">
+					<property name="earth" value=".1"/>
+				</property>
+			</property>
 			<property name="StompsSpikes" value="true"/>
 			<property name="ExplodeDelay" value="2"/>
 			<property name="ExplodeHealthThreshold" value="0"/>
@@ -1453,16 +1457,16 @@
 			<property name="SoundExplodeWarn" value="demolitionzexplodewarning"/>
 			<property name="SoundTick" value="demolitionz_beep,.5,.9"/>
 
-			<property name="ExperienceGain" value="475"/>
+			<property name="ExperienceGain" value="^xpStrongFeral03"/>
+			<!-- zombieDemolition -->
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-			<property name="LootDropProb" value=".7"/>
+			<property name="LootDropProb" value=".3"/>
 			<!-- Demo -->
 
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="250"/>
+				<passive_effect name="HealthMax" operation="base_set" value="^healthDemo"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 			</effect_group>
 		</entity_class>
 

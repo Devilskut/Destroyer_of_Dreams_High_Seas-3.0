@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Servers>
-    <ServerGroup Name="Destroyer of Dreams High Seas" Logo="" Description="Can you escape the Destoyer?">
-        <Server Name="Destroyer of Dreams High Seas" Logo="">
+    <ServerGroup Name="Destroyer of Dreams High Seas V.3" Logo="" Description="Can you escape the Destoyer?">
+        <Server Name="Destroyer of Dreams High Seas V.3" Logo="">
             <Description>
 				A mini overhaul mod for Release Ver.3.1 (B13) stable
 
@@ -10,6 +10,7 @@
 
 				Notes about this mini-mod:
 
+				Lootable GOLD Bags
 				Removed non-essential vehicle parts from loot and crafting.
 				Beds, Bedrolls, and land claim block recipes removed.
 				Removed treasure maps from loot.
@@ -35,7 +36,7 @@
 
 				A mini overhaul mod for Ver.3.1 (B13) Stable . Designed for group or solo play with an Arleigh Burke Class Destroyer DG-51, a Guns Trader and a mission to liberate the zombie threat once and for all.
 
-				Five (5) custom worlds, one for each biome, so you can choose your starting "difficulty" - Forest, Burnt, Desert, Snow, or the ultimate challenge, Wasteland.
+				Five (5) existing Random worlds, already generated, so you can choose your starting area - Forest, Burnt, Desert, Snow, or the ultimate challenge, Wasteland.
 
 				Custom-edited POI'S, giving you everything you need to be able to complete your quests.
 
@@ -52,9 +53,9 @@
 
 				4: You may NOT mine or dig under the Destroyer or the Docks.
 
-				5: All default game settings, unless you want to turn up the difficulty. It's recommended to have respawns set to 5 days groups and 7 days solo and turn airdrops OFF.
+				5: You may only use one of the Six (6) Group preset difficulties, It's recommended to have respawns set to 5 days groups and 7 days solo and turn airdrops OFF.
 
-				6: If you or anyone in your party dies, your mission is over, however you may choose continue to complete your mission.
+				6: You may change PLAYER "Death Penalty" and "Drop on Death" ONLY. Can be done as a PERMADEATH or casual play.
 
 				Contributors:
 				WMMLootRespawnTweak				        -Author: w00kien00kie
