@@ -1462,12 +1462,11 @@
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 			<property name="LootDropProb" value=".3"/>
 			<!-- Demo -->
-
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="^healthDemo"/>
-				<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
+				<passive_effect name="HealthMax" operation="base_set" value="350"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 			</effect_group>
+			<!-- Zombie HP scale -->
 		</entity_class>
 
 		<!-- *** ZOMBIE_SPIDER_FERAL-->
