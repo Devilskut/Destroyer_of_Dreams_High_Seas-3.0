@@ -230,25 +230,31 @@
 
 		 <action_sequence name="DODStarting">
 			 <property name="action_type" value="Game" />
-
 			 <action class="AddItems">
 				 <property name="added_items" value="Armor,SkillMagazine10" />
 				 <property name="added_item_counts" value="1,1" />
-			 </action>
-			 
+			 </action>	 
 			 <action class="AddSkillPoints">
 				 <property name="skill_points" value="4" />
 			 </action>
 		 </action_sequence>
 
 		 <action_sequence name="challenge_reward_MGT3M60">
-			 <action class="AddSkillPoints">
-				 <property name="skill_points" value="2" />
-			 </action>
+			 <property name="action_type" value="Game" />
 			 <action class="AddItems">
 				 <property name="added_items" value="gunMGT3M60" />
 				 <property name="added_item_counts" value="5-6" />
 			 </action>
+			 <action class="AddSkillPoints">
+				 <property name="skill_points" value="2" />
+			 </action>
+		 </action_sequence>
+
+		 <action_sequence name="challenge_complete_escape">
+			 <action class="AddQuest">
+			 <property name="phase" value="2" />
+			 <property name="quest" value="quest_DestroyerChallenge08" />
+		 </action>
 		 </action_sequence>
 		 </append>
 	     

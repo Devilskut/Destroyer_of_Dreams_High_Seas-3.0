@@ -91,12 +91,12 @@
         </block>
 		
 </insertafter>
-	
+
 
     <insertafter xpath="/blocks/block[@name]/property[1]">
 		<property name="CreativeMode" value="None"/>
 	</insertafter>
-	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set> 
+	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set>
 
 	<remove xpath="//block[@name='cntDewCollector']/drop[@event='Harvest']"></remove>
 
@@ -462,6 +462,7 @@
 	<insertafter xpath="/blocks/block[@name='powerSwitch01']">
 
 		<block name="MilitaryCommandoSwitch">
+			<property name="CreativeMode" value="None"/>
 			<property name="Class" value="ActivateSwitch"/>
 			<property name="ActivateSound" value="button4"/>
 			<property name="Powered" value="true"/>

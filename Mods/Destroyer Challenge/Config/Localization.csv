@@ -24,6 +24,25 @@ Toxic_Docks, Toxic Docks
 
 drinkCanMegaCrush,GoldensSwallow
 
+Biker Bag,Duffle Bag
+Chip Bag,Duffle Bag
+Duffle Bag 2,Duffle Bag
+Medical Bag,Duffle Bag
+Confiscated bag,Duffle Bag
+Wight Bag,Duffle Bag
+Mutant Bag,Duffle Bag
+Thug Bag,Duffle Bag
+Party Bag,Duffle Bag
+Cop Bag,Duffle Bag
+Utility Bag,Duffle Bag
+Lumber Bag,Duffle Bag
+Soldier Bag,Duffle Bag
+Big Bag,Duffle Bag
+Rancher Bag,Duffle Bag
+Janitor Bag,Duffle Bag
+Bio Bag,Duffle Bag
+
+
 PerceptionDesc,"Perception Tree: Pack gives Pipe Rifle, Stone Spear, and a few pipe bombs with additional related magazines."
 StrengthDesc,"Strength Tree: Pack gives Shotgun, Wooden Club, and a Stone Sledge hammer with additional related magazines."
 AgilityDesc,"Agility Tree: Pack gives Pipe Pistol, Bone Knife, and a Wooden Bow with additional related magazines."

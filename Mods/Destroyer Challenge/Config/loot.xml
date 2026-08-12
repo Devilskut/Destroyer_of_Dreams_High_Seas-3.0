@@ -1053,13 +1053,13 @@
 		</lootcontainer>
 
 		<!-- Oil Barrels -->
-		<lootcontainer name="OilBarrel1" count="1" size="2,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+		<lootcontainer name="OilBarrel1" count="1" size="6,1" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
 			<item name="resourceOil" count="0,1"/>
 		</lootcontainer>
-		<lootcontainer name="OilBarrel2" count="1" size="2,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+		<lootcontainer name="OilBarrel2" count="1" size="6,1" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
 			<item name="resourceOil" count="0,1"/>
 		</lootcontainer>
-		<lootcontainer name="waterBarrel3" count="1" size="2,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
+		<lootcontainer name="waterBarrel3" count="1" size="6,1" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate" destroy_on_close="false">
 			<item name="drinkJarRiverWater" count="1,3" loot_prob_template="med"/>
 			<item name="drinkJarBoiledWater" count="1,2" loot_prob_template="med"/>
 		</lootcontainer>

@@ -2,8 +2,8 @@
 
 	<set xpath="doc/backgrounds">
 		<tex file="@modfolder:UIAtlases/ItemIconAtlas/background.png"/>
-		<tex file="@modfolder:UIAtlases/ItemIconAtlas/BB-62.png"/>
-		<tex file="@modfolder:UIAtlases/ItemIconAtlas/Carrier.png"/>
+		<tex file="@modfolder:UIAtlases/ItemIconAtlas/Toxic Docks.png"/>
+	    <tex file="@modfolder:UIAtlases/ItemIconAtlas/Carrier.png"/>
 	</set>
 
 

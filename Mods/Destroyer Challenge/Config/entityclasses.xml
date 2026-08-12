@@ -880,7 +880,7 @@
 			<property name="HandItem" value="meleeHandAnimalCoyote"/>
 
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="30"/>
+				<passive_effect name="HealthMax" operation="base_set" value="70"/>
 			</effect_group>
 
 			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
@@ -1003,7 +1003,7 @@
 
 			<!-- Zombie Loot -->
 			<property name="LootDropProb" value="1"/>
-			<property name="LootDropEntityClass" value="Utility Bag"/>
+			<property name="LootDropEntityClass" value="Biker Bag"/>
 
 			<!-- Zombie HP scale -->
 			<property name="MoveSpeedAggro" value="0.2, 1.2"/>
@@ -1012,7 +1012,7 @@
 			<property name="ExperienceGain" value="^xpStrong01"/>
 			<!-- Zombie HP scale -->
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="^healthStrong"/>
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>
 			</effect_group>
 		</entity_class>
 
@@ -1462,11 +1462,11 @@
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 			<property name="LootDropProb" value=".3"/>
 			<!-- Demo -->
+
+			<!-- Zombie HP scale -->
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="350"/>
-				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 			</effect_group>
-			<!-- Zombie HP scale -->
 		</entity_class>
 
 		<!-- *** ZOMBIE_SPIDER_FERAL-->
@@ -1494,11 +1494,7 @@
 			<!-- Feral -->
 
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="50"/>
-			</effect_group>
-
-			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="50"/>
+				<passive_effect name="HealthMax" operation="base_set" value="65"/>
 				<triggered_effect trigger="onSelfFirstSpawn" target="self" action="AddBuff" buff="DK_BOMB"/>
 			</effect_group>
 		</entity_class>

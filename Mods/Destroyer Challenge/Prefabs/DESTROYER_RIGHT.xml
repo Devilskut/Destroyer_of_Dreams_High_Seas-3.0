@@ -25,9 +25,6 @@
   <property name="QuestTags" value="trader, clear, fetch, infested" />
   <property name="YOffset" value="-3" />
   <property class="IndexedBlockOffsets">
-    <property class="FetchContainer">
-      <property name="0" value="15, 39, 148" />
-    </property>
     <property class="challenge_polymers">
       <property name="0" value="19, 22, 150" />
     </property>
@@ -46,25 +43,28 @@
     <property class="challenge_sinks">
       <property name="0" value="19, 23, 147" />
     </property>
+    <property class="FetchContainer">
+      <property name="0" value="15, 39, 148" />
+    </property>
     <property class="Rally">
       <property name="0" value="22, 22, 185" />
     </property>
   </property>
   <property class="Stats">
-    <property name="LightsVolume" value="8736.77" />
-    <property name="TotalVertices" value="494535" />
-    <property name="TotalTriangles" value="298493" />
+    <property name="LightsVolume" value="8736.771" />
+    <property name="TotalVertices" value="495507" />
+    <property name="TotalTriangles" value="300205" />
     <property class="BlockEntities">
-      <property name="Vertices" value="87085" />
-      <property name="Triangles" value="42239" />
+      <property name="Vertices" value="84293" />
+      <property name="Triangles" value="41179" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="156892" />
       <property name="Triangles" value="103410" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="225088" />
-      <property name="Triangles" value="112544" />
+      <property name="Vertices" value="229312" />
+      <property name="Triangles" value="114656" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="184" />
@@ -79,8 +79,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes5">
-      <property name="Vertices" value="25094" />
-      <property name="Triangles" value="40112" />
+      <property name="Vertices" value="24634" />
+      <property name="Triangles" value="40772" />
     </property>
   </property>
 </prefab>

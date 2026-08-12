@@ -38,11 +38,11 @@
 
 	<!-- Group 4: Gather Materials - Find parts for the UH-60 -->
 	<challenge_group category="DOD High Seas" name="Gather2" title_key="challengeGroupGather2"
-	                 reward_text_key="challengeGroupGather2Reward" reward_event="challenge_reward_Gather2" link_challenges="true" hidden_by="Basics"/>
+	                 reward_text_key="challengeGroupGather2Reward" reward_event="challenge_reward_Gather2" link_challenges="true" hidden_by="Gather"/>
 	
 	<!-- Group 5: Use UH-60 to Escape - Missions -->
 	<challenge_group category="DOD High Seas" name="Escape" title_key="challengeGroupEscape"
-                     reward_text_key="challengeGroupEscapeReward" reward_event="challenge_complete_escape" link_challenges="true" hidden_by="Basics"/>
+                     reward_text_key="challengeGroupEscapeReward" reward_event="challenge_complete_escape" link_challenges="true" hidden_by="Gather2"/>
 
 	<!-- Group 6: Traders - Find Traders -->
 	<challenge_group category="DOD High Seas" name="Traders" title_key="challengeGroupTradersQuests"

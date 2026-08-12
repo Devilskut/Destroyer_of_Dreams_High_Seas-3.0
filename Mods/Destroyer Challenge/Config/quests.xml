@@ -86,7 +86,7 @@
 			<property name="subtitle_key" value="quest_DestroyerChallenge_subtitle"/>
 			<property name="description_key" value="quest_DestroyerChallenge_description"/>
 			<property name="icon" value="ui_game_symbol_quest"/>
-			<property name="repeatable" value="true"/>
+			<property name="repeatable" value="false"/>
 			<property name="category_key" value="quest"/>
 			<property name="difficulty_tier" value="1" param1="difficulty"/>
 			<property name="offer_key" value="quest_tier1_fetch_offer" param1="offer"/>
@@ -95,7 +95,7 @@
 			<property name="login_rally_reset" value="true"/>
 			<property name="reward_choices_count" value="5"/>
 			<property name="filter_tags" value="poi" param1="filter_tags"/>
-			<property name="shareable" value="true"/>
+			<property name="shareable" value="false"/>
 
 			<property name="completiontype" value="TurnIn"/>
 			<property name="completion_key" value="quest_fetch_completion"/>
@@ -147,7 +147,7 @@
 			</objective> 
 
 			<reward type="Exp" value="5060"/>
-			<reward type="Quest" id="quest_DestroyerChallenge08" />
+			<!--	<reward type="Quest" id="quest_DestroyerChallenge08" /> -->
 
      		<reward type="LootItem" id="groupQuestFood,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestFood,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="1"/>
