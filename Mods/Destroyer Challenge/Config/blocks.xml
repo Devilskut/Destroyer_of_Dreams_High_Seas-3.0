@@ -233,6 +233,7 @@
 	</append> 
 	
 	<set xpath="//block[@name='terrDirt']//drop[1]/@count">10</set>
+	<set xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@name='resourceRockSmall']/@count">5</set>
 	
 	<set xpath="//block[@name='glassBulletproofMaster']/property[@name='LightOpacity']/@value">0</set>
 	<set xpath="//block[@name='glassBusinessBlock']/property[@name='LightOpacity']/@value">0</set>
