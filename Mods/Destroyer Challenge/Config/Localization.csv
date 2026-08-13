@@ -502,7 +502,7 @@ loadingTipAircraft3_title,Skill Magazines
 loadingTipAircraft3,"Skill magazines can be found in their usual places, and zombies also have a chance to give certain types of magazines"
 
 loadingTipAircraft4_title,Looting
-loadingTipAircraft4,"Loot is an integral part to completing this challenge. Loot will NOT restock."
+loadingTipAircraft4,"Loot is an integral part to completing this challenge. Loot will restock every 7 days."
 
 loadingTipAircraft5_title,Zombie respawns
 loadingTipAircraft5,"Zombies can now be set to respawn after a time you decide. Check the 'Destroyer' tab on the main menu, and set the number of days (7) recommended, you want between zombies respawning on the ship."

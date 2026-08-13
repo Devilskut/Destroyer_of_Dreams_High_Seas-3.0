@@ -18,7 +18,7 @@
   <decoration type="model" name="rwg_tile_industrial_straight" position="87,38,583" rotation="2" y_is_groundlevel="true" />
   <decoration type="model" name="rwg_tile_industrial_corner" position="87,38,733" rotation="0" y_is_groundlevel="true" />
   <decoration type="model" name="rwg_tile_industrial_t_03" position="87,38,433" rotation="2" y_is_groundlevel="true" />
-  <decoration type="model" name="Toxic_Docks" position="266,36,690" rotation="0" y_is_groundlevel="true" />
+  <decoration type="model" name="Toxic_Docks" position="266,35,690" rotation="0" y_is_groundlevel="true" />
   <decoration type="model" name="Spicy_Sea_4" position="235,38,733" rotation="1" y_is_groundlevel="true" />
   <decoration type="model" name="Spicy_Sea_4" position="310,38,733" rotation="1" y_is_groundlevel="true" />
 </prefabs>

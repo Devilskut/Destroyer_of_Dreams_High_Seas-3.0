@@ -377,10 +377,9 @@
 		</lootgroup>
 		
 		<lootgroup name="groupBikerLoot" count="all">
-			<item name="vehiclesSkillMagazine" prob="1" force_prob="true" tags="GMLoot"/>
+			<item name="vehiclesSkillMagazine" prob=".8" force_prob="true" tags="GMLoot"/>
 			<item name="electricianSkillMagazine" prob=".1" force_prob="true" tags="ElLoot"/>
-			<item name="resourceHeadlight" count="1" />
-			<item name="resourceOil" count="4" />
+			<item name="resourceHeadlight" count="1" prob=".1" force_prob="true"/>
 		</lootgroup>
 		
 		<lootgroup name="groupLabWorkerLoot" count="all">
